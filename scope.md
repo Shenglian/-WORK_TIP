@@ -73,7 +73,7 @@ In the previous example my friend Monique is represented by the variable myFrien
 
 This type of look up is called lexical (static) scope. The static structure of a program determines the variable scope. The scope of a variable is defined by its location within the source code, and nested functions have access to variables declared in their outer scope. No matter where a function is called from, or even how it’s called, its lexical scope depends only by where the function was declared.
 
-這行為被稱作 (lexical (static) scope)[http://en.wikipedia.org/wiki/Lexical_scoping#Lexical_scoping]。城市的靜態結構決定於 variable scope。 定義 variable 的範圍是由 source code 的位置和 外部範圍 透過 declared variable nested functions，不論 function 在哪邊被呼叫，或是它怎樣被呼叫的，lexical scope 只依賴這 function 在哪邊被宣告的。
+這行為被稱作 [lexical (static) scope](http://en.wikipedia.org/wiki/Lexical_scoping#Lexical_scoping)。城市的靜態結構決定於 variable scope。 定義 variable 的範圍是由 source code 的位置和 外部範圍 透過 declared variable nested functions，不論 function 在哪邊被呼叫，或是它怎樣被呼叫的，lexical scope 只依賴這 function 在哪邊被宣告的。
 
 In JavaScript, variables with the same name can be specified at multiple layers of nested scope. In such case local variables gain priority over global variables. If you declare a local variable and a global variable with the same name, the local variable will take precedence when you use it inside a function. This type of behavior is called shadowing. Simply put, the inner variable shadows the outer.
 
