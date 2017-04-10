@@ -13,6 +13,52 @@
 1. [The Basics of DOM Manipulation in Vanilla JavaScript (No jQuery)](https://goo.gl/Pd9ym7)
 2. [常用API合集](https://www.kancloud.cn/dennis/tgjavascript/241852) - 其他地方也能看
 3. [js 常用api背诵](http://www.jianshu.com/p/b678628d114c)
+4. [fullscreen api](https://heeroluo.net/article/detail/97/native-fullscreen-javascript-api)
+5. [Display fullscreen website using javascript (Internet Explorer/Safari/Chrome/Firefox)](http://xme.im/display-fullscreen-website-using-javascript)
+
+```js
+element.matches
+
+> Object 
+Object.assign(target, ...sources)
+  // method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object.
+
+  // 可以用來設定修改多值
+  Object.assign(oneElement, {
+    value: 'hello',
+    id: 'world',
+  });
+
+  // 要刪除屬性，設定成 null 就好
+  oneElement.value = null
+
+Object.create(proto, [ propertiesObject ])
+  // method creates a new object with the specified prototype object and properties.
+
+
+// 同時監聽許多元素時，透過 event.target 來取得是哪個元素觸發的。
+Array.from(allElements).forEach(element => {
+  element.addEventListener('change', function (event) {
+    console.log(event.target.value)
+  })
+})
+
+[JavaScript animations](https://javascript.info/js-animation)
+// animate window.requestAnimationFrame()
+const start = window.performance.now()
+const duration = 2000
+
+window.requestAnimationFrame(function fadeIn (now) {
+  const progress = now - start
+  oneElement.style.opacity = progress / duration
+
+  if (progress < duration) {
+    window.requestAnimationFrame(fadeIn)
+  }
+}
+
+```
+
 
 > prototype
 
