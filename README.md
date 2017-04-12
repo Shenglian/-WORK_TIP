@@ -92,7 +92,8 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 1. [Vue 插件開發](https://zhuanlan.zhihu.com/p/26057542)
 2. [Vue.js 组件编码规范](https://pablohpsilva.github.io/vuejs-component-style-guide/#/chinese?id=vue-%E7%BB%84%E4%BB%B6%E5%91%BD%E5%90%8D)
-3. 
+3. [提高 webpack 构建 Vue 项目的速度](https://github.com/lin-xin/blog/issues/10)
+4. [如何写一手漂亮的 Vue](http://jeffjade.com/2017/03/11/120-how-to-write-vue-better/)
 
 ## Highcharts
 
