@@ -87,8 +87,7 @@ window.requestAnimationFrame(function fadeIn (now) {
 1. [[Javascript] ES7 Async Await 聖經](https://medium.com/@peterchang_82818/javascript-es7-async-await-%E6%95%99%E5%AD%B8-703473854f29-tutorial-example-703473854f29)
 
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
-3. [JavaScript async/await 的奇淫技巧 
-](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
+3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
 
 > 面試
 
@@ -149,4 +148,8 @@ window.requestAnimationFrame(function fadeIn (now) {
 ## 緩存
 
 1. [九种浏览器端缓存机制知多少](http://jixianqianduan.com/frontend-javascript/2015/12/28/nine-browser-cache-methods.html)
+
+## bash 
+
+1. [bash-guide](https://github.com/Idnan/bash-guide)
 
