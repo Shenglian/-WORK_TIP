@@ -109,6 +109,47 @@ window.requestAnimationFrame(function fadeIn (now) {
 ## Angularjs
 
 1. directive [區別 $eval, $parse 和 $observe](https://github.com/Shenglian/work-tip/blob/master/angularjs/directive.md)
+  1. 參考 [angular-infinite-scroll](https://github.com/sparkalow/angular-infinite-scroll/blob/master/src/infinite-scroll.js)
+  2. 我自己寫的
+  ```js
+  // 我自己寫的
+  app.directive('infiniteScroll', [
+    "$window", 
+    function ($window) {
+      return {
+        /**
+        * attrs.canLoad = 決定能不能繼續 load
+        * attrs.isFinish = 判斷是否已經沒有資料
+        * attrs.threshold = 距離多少才拉資料
+        * 
+        * <div infinite-scroll="addItems()" can-load="canLoad" is-finish="isFinish" threshold="100"></div>
+        * 範例在 brand_master_management.js && brand_master_management/index.html
+        */
+        link: function (scope, element, attrs) {
+          var offset = parseInt(attrs.threshold) || 0;
+          var e = element[0];
+
+          function scrollEvent() {
+            if (scope.$eval(attrs.canLoad) && e.offsetTop - window.innerHeight - window.pageYOffset <= offset) {
+              scope.$apply(attrs.infiniteScroll);
+            } 
+
+            // 因為還要 filter 資料，不能 remove eventlistener
+            // if (scope.$eval(attrs.isFinish)) {
+            //   window.removeEventListener('scroll', throttleScrollEvent, false);
+            // }
+          }
+
+          // bind lodash throttle
+          var throttleScrollEvent = _.throttle(scrollEvent, 100);
+
+          window.addEventListener('scroll', throttleScrollEvent, false);
+          
+        }
+      };
+    }]);
+  ```
+  
 
 ## Vue
 
