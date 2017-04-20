@@ -88,6 +88,7 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
 3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
+4. [Callback Promise Generator Async-Await 和异常处理的演进](http://www.jianshu.com/p/78dfb38ac3d7)
 
 > 面試
 
@@ -104,6 +105,10 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 1. [replace](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 2. [search](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+
+## Angularjs
+
+1. directive [區別 $eval, $parse 和 $observe](https://github.com/Shenglian/work-tip/blob/master/angularjs/directive.md)
 
 ## Vue
 
@@ -126,6 +131,7 @@ window.requestAnimationFrame(function fadeIn (now) {
 > Tip
 
 1. [css-protips](https://github.com/AllThingsSmitty/css-protips)
+2. [Let’s Look at 50+ Interesting CSS Properties & Values](https://css-tricks.com/lets-look-50-interesting-css-properties-values/?utm_source=frontendfocus&utm_medium=email#all)
 
 > layout
 
