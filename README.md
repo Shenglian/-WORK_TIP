@@ -61,7 +61,7 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 
 > prototype
-
+0. [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
 1. [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
 2. [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
 
@@ -121,9 +121,41 @@ window.requestAnimationFrame(function fadeIn (now) {
         * attrs.canLoad = 決定能不能繼續 load
         * attrs.isFinish = 判斷是否已經沒有資料
         * attrs.threshold = 距離多少才拉資料
+        * infinite-scroll = call method
         * 
+        * HTML:
         * <div infinite-scroll="addItems()" can-load="canLoad" is-finish="isFinish" threshold="100"></div>
-        * 範例在 brand_master_management.js && brand_master_management/index.html
+        * 
+        * CSS:
+        * .infinite-scroll-style {
+              opacity: 0;
+              margin: 20px auto;
+              width: 100%;
+              height: 44px;
+              line-height: 44px;
+              text-align: center;
+              background-color: #1EA9D4;
+              font-size: 14px;
+              color: #FFFFFF;
+
+              border-radius: 5px;
+              transition: all, .3s;
+              cursor: pointer;
+              
+            }
+
+            .infinite-scroll-style:hover {
+              background-color:#38678f;
+            }
+
+            .infinite-scroll-style.finish {
+              opacity: 1;
+            }
+        * 
+        * 範例：
+        * brand_master_management.js 
+        * && 
+        * brand_master_management/index.html
         */
         link: function (scope, element, attrs) {
           var offset = parseInt(attrs.threshold) || 0;
@@ -144,6 +176,11 @@ window.requestAnimationFrame(function fadeIn (now) {
           var throttleScrollEvent = _.throttle(scrollEvent, 100);
 
           window.addEventListener('scroll', throttleScrollEvent, false);
+
+          // click to back Top
+          e.addEventListener('click', function() {
+            window.scrollTo(0, 0);
+          }, false);
           
         }
       };
@@ -152,6 +189,10 @@ window.requestAnimationFrame(function fadeIn (now) {
   
 
 ## Vue
+
+0. VueCheatSheet
+  1. [vuex-cheatsheet](https://vuejs-tips.github.io/vuex-cheatsheet/#)
+  2. [vue-cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
 
 1. [Vue 插件開發](https://zhuanlan.zhihu.com/p/26057542)
 2. [Vue.js 组件编码规范](https://pablohpsilva.github.io/vuejs-component-style-guide/#/chinese?id=vue-%E7%BB%84%E4%BB%B6%E5%91%BD%E5%90%8D)
@@ -211,3 +252,6 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 1. [bash-guide](https://github.com/Idnan/bash-guide)
 
+## DevTool 
+0. [DevTips](https://umaar.com/dev-tips/v)
+1. [Chrome DevTools: A Modern Front-End Workflow - video and slides available for my Render Conf talk](https://umaar.com/dev-tips/140-modern-web-workflow-renderconf/)
