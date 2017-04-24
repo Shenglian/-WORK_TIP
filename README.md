@@ -82,6 +82,7 @@ window.requestAnimationFrame(function fadeIn (now) {
 > Promise
 
 1. [透彻掌握 Promise 的使用，读这篇就够了](https://juejin.im/entry/58e1d720ac502e006c0e0196)
+2. [從Promise開始的JavaScript異步生活](https://eyesofkids.gitbooks.io/javascript-start-es6-promise/content/)
 
 > Async Await
 
@@ -224,9 +225,10 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 > layout
 
-1. [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
-2. [Flexboxdefense](http://www.flexboxdefense.com/)
-3. [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
+1. [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
+2. [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
+3. [Flexboxdefense](http://www.flexboxdefense.com/)
+
 
 > Unix 
 
@@ -262,3 +264,6 @@ window.requestAnimationFrame(function fadeIn (now) {
 ## DevTool 
 0. [DevTips](https://umaar.com/dev-tips/v)
 1. [Chrome DevTools: A Modern Front-End Workflow - video and slides available for my Render Conf talk](https://umaar.com/dev-tips/140-modern-web-workflow-renderconf/)
+
+## Ruby on Rails
+0. [為你自己學 Ruby on Rails](http://railsbook.tw/table-of-content)
