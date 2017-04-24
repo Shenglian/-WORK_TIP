@@ -60,10 +60,11 @@ window.requestAnimationFrame(function fadeIn (now) {
 ```
 
 
-> prototype
+> Prototype
 0. [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
 1. [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
 2. [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
+3. [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
 
 > Scope
 
@@ -199,6 +200,12 @@ window.requestAnimationFrame(function fadeIn (now) {
 3. [提高 webpack 构建 Vue 项目的速度](https://github.com/lin-xin/blog/issues/10)
 4. [如何写一手漂亮的 Vue](http://jeffjade.com/2017/03/11/120-how-to-write-vue-better/)
 5. [Axios 入門配置](https://blog.ygxdxx.com/2017/01/29/Axios-Config/)
+6. [Vuejs-tips](https://medium.com/vuejs-tips)
+  1. [Always declare your data before use it](https://goo.gl/duZYY6)
+  2. [Reactive dynamic properties - use $set](https://goo.gl/2RpNXE)
+    1.  [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
+  3. [Deleting Array index in Vue.js - this.delete](https://goo.gl/2ffvqE)
+  4. 
 
 ## Highcharts
 
