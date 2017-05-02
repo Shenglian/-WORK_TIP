@@ -207,6 +207,8 @@ window.requestAnimationFrame(function fadeIn (now) {
     1.  [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
   3. [Deleting Array index in Vue.js - this.delete](https://goo.gl/2ffvqE)
   4. 
+7. [Vue2.0 源码阅读：响应式原理](http://zhouweicsu.github.io/blog/2017/03/07/vue-2-0-reactivity/)
+8. [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
 
 ## Highcharts
 
