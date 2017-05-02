@@ -274,3 +274,6 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 ## React
 0. [大型高性能React PWA如何消除各类性能瓶颈？](https://zhuanlan.zhihu.com/p/26489388)
+
+## javascript es6
+0. [深入理解ES6中的解构](http://zhouweicsu.github.io/blog/2015/09/01/es6-destructuring-in-depth/)
