@@ -59,6 +59,14 @@ window.requestAnimationFrame(function fadeIn (now) {
 
 ```
 
+```js
+
+// http://stackoverflow.com/questions/7452341/what-does-void-0-mean
+// 原本 undefined 是可以被 overwirten ，但是 ES5 之後就不行了
+
+void 0; // undefied;
+
+```
 
 > Prototype
 0. [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
