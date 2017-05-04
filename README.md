@@ -17,24 +17,6 @@
 5. [Display fullscreen website using javascript (Internet Explorer/Safari/Chrome/Firefox)](http://xme.im/display-fullscreen-website-using-javascript)
 
 ```js
-element.matches
-
-> Object 
-Object.assign(target, ...sources)
-  // method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object.
-
-  // 可以用來設定修改多值
-  Object.assign(oneElement, {
-    value: 'hello',
-    id: 'world',
-  });
-
-  // 要刪除屬性，設定成 null 就好
-  oneElement.value = null
-
-Object.create(proto, [ propertiesObject ])
-  // method creates a new object with the specified prototype object and properties.
-
 
 // 同時監聽許多元素時，透過 event.target 來取得是哪個元素觸發的。
 Array.from(allElements).forEach(element => {
@@ -95,7 +77,6 @@ void 0; // undefied;
 > Async Await
 
 1. [[Javascript] ES7 Async Await 聖經](https://medium.com/@peterchang_82818/javascript-es7-async-await-%E6%95%99%E5%AD%B8-703473854f29-tutorial-example-703473854f29)
-
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
 3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
 4. [Callback Promise Generator Async-Await 和异常处理的演进](http://www.jianshu.com/p/78dfb38ac3d7)
@@ -217,6 +198,11 @@ void 0; // undefied;
   4. 
 7. [Vue2.0 源码阅读：响应式原理](http://zhouweicsu.github.io/blog/2017/03/07/vue-2-0-reactivity/)
 8. [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
+
+9. [个迷你vue库，虽然小但功能全面，可以作为想了解vue背后思想以及想学习vue源码而又不知如何入手的入门学习资料。](https://github.com/xiaofuzi/deep-in-vue/blob/master/src/the-super-tiny-vue.js)
+
+10. [入門 vuex](https://github.com/Shenglian/work-tip/blob/master/vuejs/vuex.md)
+
 
 ## Highcharts
 
