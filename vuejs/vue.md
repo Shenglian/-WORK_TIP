@@ -1,16 +1,3 @@
-```js
-
-  let _toString = Object.prototype.toString;
-
-  // The PlainObject type is a JavaScript object containing zero or more key-value pairs.‍
-  // http://stackoverflow.com/questions/8892465/javascript-object-object-means
-  // http://stackoverflow.com/questions/29795330/compare-tostring-call-against-tostring
-  function isPlainObject (obj) {
-    return _toString.call(obj) === '[object Object]';
-  }
-
-
-```
 
 [Observer]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png
 [Observer-flow]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer-flow.png
@@ -25,6 +12,7 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
   * Dep: Observer 與 Watcher 的紐帶，當數據變化時，會被 Observer 觀察到，然後由 Dep 通知到Watcher
 
 示意圖如下：
+
 ![Observer-img][Observer]
 
 # Observer
@@ -66,6 +54,8 @@ value是需要被觀察的數據對象，在構造函數中，會給value增加_
 * defineReactive: 通過Object.defineProperty設置對象的key屬性，使得能夠捕獲到該屬性值的set/get動作。一般* 是 由Watcher的實例對象進行get操作，此時Watcher的實例對象將被自動添加到Dep實例的依賴數組中，在外部操作觸發了set時，將通過Dep實例的notify來通知所有依賴的watcher進行更新。
 
 如果不太理解上面的文字描述可以看一下圖：
+
+示意圖如下：
 
 ![Observer-flow-img][Observer-flow]
 

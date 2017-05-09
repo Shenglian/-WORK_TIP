@@ -1,5 +1,19 @@
 ## Object
 
+### toString 
+
+```js
+
+  let _toString = Object.prototype.toString;
+
+  // The PlainObject type is a JavaScript object containing zero or more key-value pairs.‍
+  // http://stackoverflow.com/questions/8892465/javascript-object-object-means
+  // http://stackoverflow.com/questions/29795330/compare-tostring-call-against-tostring
+  function isPlainObject (obj) {
+    return _toString.call(obj) === '[object Object]';
+  }
+
+```
 
 ### assign 
 
