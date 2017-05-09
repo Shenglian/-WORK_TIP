@@ -12,6 +12,9 @@
 
 ```
 
+[Observer]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png
+[Observer-flow]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer-flow.png
+
 # Vue 原理解析之 observer模塊
 
 observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實現視圖與數據的響應式更新，底層全憑 observer 的支持。
@@ -22,8 +25,7 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
   * Dep: Observer 與 Watcher 的紐帶，當數據變化時，會被 Observer 觀察到，然後由 Dep 通知到Watcher
 
 示意圖如下：
-
-[Observer]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png
+![Observer-img][Observer]
 
 # Observer
 
@@ -65,7 +67,7 @@ value是需要被觀察的數據對象，在構造函數中，會給value增加_
 
 如果不太理解上面的文字描述可以看一下圖：
 
-[Observer-flow]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer-flow.png
+![Observer-flow-img][Observer-flow]
 
 # Dep
 
