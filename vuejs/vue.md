@@ -23,7 +23,7 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
 
 示意圖如下：
 
-[Observer]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
+[Observer]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png
 
 # Observer
 
@@ -65,7 +65,7 @@ value是需要被觀察的數據對象，在構造函數中，會給value增加_
 
 如果不太理解上面的文字描述可以看一下圖：
 
-[Observer-flow]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
+[Observer-flow]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer-flow.png
 
 # Dep
 
@@ -185,5 +185,6 @@ watcher 實例上有這些方法：
 
 
 [資料來源：Vue原理解析之observer模块 ](https://segmentfault.com/a/1190000008377887)
+
 [資料來源：Vue2.0 源码阅读：响应式原理 ](http://zhouweicsu.github.io/blog/2017/03/07/vue-2-0-reactivity/)
 
