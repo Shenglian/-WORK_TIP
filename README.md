@@ -181,27 +181,27 @@ void 0; // undefied;
 
 ## Vue
 
-0. VueCheatSheet
-  1. [vuex-cheatsheet](https://vuejs-tips.github.io/vuex-cheatsheet/#)
-  2. [vue-cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
+* VueCheatSheet
+  * [vuex-cheatsheet](https://vuejs-tips.github.io/vuex-cheatsheet/#)
+  * [vue-cheatsheet](https://vuejs-tips.github.io/cheatsheet/)
 
-1. [Vue 插件開發](https://zhuanlan.zhihu.com/p/26057542)
-2. [Vue.js 组件编码规范](https://pablohpsilva.github.io/vuejs-component-style-guide/#/chinese?id=vue-%E7%BB%84%E4%BB%B6%E5%91%BD%E5%90%8D)
-3. [提高 webpack 构建 Vue 项目的速度](https://github.com/lin-xin/blog/issues/10)
-4. [如何写一手漂亮的 Vue](http://jeffjade.com/2017/03/11/120-how-to-write-vue-better/)
-5. [Axios 入門配置](https://blog.ygxdxx.com/2017/01/29/Axios-Config/)
-6. [Vuejs-tips](https://medium.com/vuejs-tips)
-  1. [Always declare your data before use it](https://goo.gl/duZYY6)
-  2. [Reactive dynamic properties - use $set](https://goo.gl/2RpNXE)
-    1.  [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
-  3. [Deleting Array index in Vue.js - this.delete](https://goo.gl/2ffvqE)
-  4. 
-7. [Vue2.0 源码阅读：响应式原理](http://zhouweicsu.github.io/blog/2017/03/07/vue-2-0-reactivity/)
-8. [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
+* [Vue 插件開發](https://zhuanlan.zhihu.com/p/26057542)
+* [Vue.js 组件编码规范](https://pablohpsilva.github.io/vuejs-component-style-guide/#/chinese?id=vue-%E7%BB%84%E4%BB%B6%E5%91%BD%E5%90%8D)
+* [提高 webpack 构建 Vue 项目的速度](https://github.com/lin-xin/blog/issues/10)
+* [如何写一手漂亮的 Vue](http://jeffjade.com/2017/03/11/120-how-to-write-vue-better/)
+* [Axios 入門配置](https://blog.ygxdxx.com/2017/01/29/Axios-Config/)
 
-9. [个迷你vue库，虽然小但功能全面，可以作为想了解vue背后思想以及想学习vue源码而又不知如何入手的入门学习资料。](https://github.com/xiaofuzi/deep-in-vue/blob/master/src/the-super-tiny-vue.js)
+* [Vuejs-tips](https://medium.com/vuejs-tips)
+  * [Always declare your data before use it](https://goo.gl/duZYY6)
+  * [Reactive dynamic properties - use $set](https://goo.gl/2RpNXE)
+  *  [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
+  * [Deleting Array index in Vue.js - this.delete](https://goo.gl/2ffvqE)
+* [Vue2.0 原始碼簡析：](https://github.com/Shenglian/work-tip/blob/master/vuejs/vue.md)
+* [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
 
-10. [入門 vuex](https://github.com/Shenglian/work-tip/blob/master/vuejs/vuex.md)
+* [个迷你vue库，虽然小但功能全面，可以作为想了解vue背后思想以及想学习vue源码而又不知如何入手的入门学习资料。](https://github.com/xiaofuzi/deep-in-vue/blob/master/src/the-super-tiny-vue.js)
+
+* [入門 vuex](https://github.com/Shenglian/work-tip/blob/master/vuejs/vuex.md)
 
 
 ## Highcharts
