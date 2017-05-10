@@ -214,16 +214,19 @@ void 0; // undefied;
 
 ## Css
 
+### Layout
+
+1. [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
+2. [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
+3. [Flexboxdefense](http://www.flexboxdefense.com/)
+4. [Flex 基礎文章](http://www.w3cplus.com/css3/understanding-flexbox-everything-you-need-to-know.html)
+5. [Flex 比較深入的文章](http://www.w3cplus.com/css3/flexbox-layout-and-calculation.html)
+
 > Tip
 
 1. [css-protips](https://github.com/AllThingsSmitty/css-protips)
 2. [Let’s Look at 50+ Interesting CSS Properties & Values](https://css-tricks.com/lets-look-50-interesting-css-properties-values/?utm_source=frontendfocus&utm_medium=email#all)
 
-> layout
-
-1. [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
-2. [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
-3. [Flexboxdefense](http://www.flexboxdefense.com/)
 
 > Unix 
 
