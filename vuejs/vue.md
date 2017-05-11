@@ -8,8 +8,8 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
 
 > observer 模塊在 Vue項目中的代碼位置是 [src/core/observer](https://github.com/vuejs/vue/blob/dev/src/core/observer/index.js)，模塊共分為這幾個部分：
   * Observer: 數據的觀察者，讓數據對象的讀寫操作都處於自己的監管之下 
-  * Watcher: 數據的訂閱者，數據的變化會通知到Watcher，然後由Watcher進行相應的操作，例如更新視圖
-  * Dep: Observer 與 Watcher 的紐帶，當數據變化時，會被 Observer 觀察到，然後由 Dep 通知到Watcher
+  * Watcher: 數據的訂閱者，數據的變化會通知到 Watcher，然後由 Watcher進行相應的操作，例如更新視圖
+  * Dep: Observer 與 Watcher 的紐帶，當數據變化時，會被 Observer 觀察到，然後由 Dep 通知到 Watcher
 
 示意圖如下：
 
@@ -21,7 +21,7 @@ Observer 類定義在 [src/core/observer/index.js](https://github.com/vuejs/vue/
 
 ```js
 
-export class Observer {
+class Observer {
   value: any;
   dep: Dep;
   vmCount: number; // number of vms that has this object as root $data
@@ -43,8 +43,37 @@ export class Observer {
   }
 }
 
+[source from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
+
+// can we use __proto__? 
+export const hasProto = '__proto__' in {}
+
+// helpers
+
+/**
+ * Augment an target Object or Array by intercepting
+ * the prototype chain using __proto__
+ */
+function protoAugment (target, src: Object) {
+  /* eslint-disable no-proto */
+  target.__proto__ = src
+  /* eslint-enable no-proto */
+}
+
+/**
+ * Augment an target Object or Array by defining
+ * hidden properties.
+ */
+/* istanbul ignore next */
+function copyAugment (target: Object, src: Object, keys: Array<string>) {
+  for (let i = 0, l = keys.length; i < l; i++) {
+    const key = keys[i]
+    def(target, key, src[key])
+  }
+}
+
 ```
-value是需要被觀察的數據對象，在構造函數中，會給value增加__ob__屬性，作為數據已經被Observer觀察的標誌。如果value是數組，就使用observeArray遍歷value，對value中每一個元素調用observe分別進行觀察。如果value是對象，則使用walk遍歷value上每個key，對每個key調用defineReactive來獲得該key的set/get控制權。
+value 是需要被觀察的數據對象，在構造函數中，會給 value 增加 __ob__ 屬性，作為數據已經被 Observer 觀察的標誌。如果 value 是數組，就使用 observeArray 遍歷 value，對 value 中每一個元素調用 observe 分別進行觀察。如果 value 是對象，則使用 walk 遍歷 value 上每個key，對每個 key 調用 defineReactive 來獲得該 key 的 set/get 控制權。
 
 解釋下上面用到的幾個函數的功能：
 
@@ -57,7 +86,7 @@ value是需要被觀察的數據對象，在構造函數中，會給value增加_
 
 示意圖如下：
 
-![Observer-flow-img][Observer-flow]
+<center>![Observer-flow-img][Observer-flow]</center>
 
 # Dep
 
