@@ -20,7 +20,6 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
 Observer 類定義在 [src/core/observer/index.js](https://github.com/vuejs/vue/blob/dev/src/core/observer/index.js#L34-L53) 中，先來看一下 Observer 的構造函數
 
 ```js
-
 class Observer {
   value: any;
   dep: Dep;
@@ -44,12 +43,13 @@ class Observer {
 }
 ```
 
-[source from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
-
+[hasProto from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
 ```js
 // can we use __proto__? 
 export const hasProto = '__proto__' in {}
+```
 
+```js
 // helpers
 
 /**
@@ -80,7 +80,7 @@ value 是需要被觀察的數據對象，在構造函數中，會給 value 增�
 解釋下上面用到的幾個函數的功能：
 
 * observeArray: 遍歷數組，對數組的每個元素調用observe
-* observe: 檢查對像上是否有 __ob__ 屬性，如果存在，則表明該對像已經處於Observer的觀察中，如果不存在，則new Observer來觀察對象（其實還有一些判斷邏輯，為了便於理解就不贅述了）
+* observe: 檢查對像上是否有__ob__屬性，如果存在，則表明該對像已經處於Observer的觀察中，如果不存在，則new Observer來觀察對象（其實還有一些判斷邏輯，為了便於理解就不贅述了）
 * walk: 遍歷對象的每個key，對對像上每個 key 的數據調用 defineReactive
 * defineReactive: 通過Object.defineProperty設置對象的key屬性，使得能夠捕獲到該屬性值的set/get動作。一般* 是 由Watcher的實例對象進行get操作，此時Watcher的實例對象將被自動添加到Dep實例的依賴數組中，在外部操作觸發了set時，將通過Dep實例的notify來通知所有依賴的watcher進行更新。
 
