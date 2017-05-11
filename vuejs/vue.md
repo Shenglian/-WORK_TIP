@@ -47,10 +47,22 @@ class Observer {
 // can we use __proto__? 
 export const hasProto = '__proto__' in {}
 ```
-[hasProto from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
+[hasProto 定義在此 => ](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
 
 ```js
 // helpers
+
+/**
+ * Define a property.
+ */
+function def (obj, key, val, enumerable) {
+  Object.defineProperty(obj, key, {
+    value: val,
+    enumerable: !!enumerable,
+    writable: true,
+    configurable: true
+  });
+}
 
 /**
  * Augment an target Object or Array by intercepting
@@ -73,16 +85,15 @@ function copyAugment (target: Object, src: Object, keys: Array<string>) {
     def(target, key, src[key])
   }
 }
-
 ```
 value 是需要被觀察的數據對象，在構造函數中，會給 value 增加__ob__屬性，作為數據已經被 Observer 觀察的標誌。如果 value 是數組，就使用 observeArray 遍歷 value，對 value 中每一個元素調用 observe 分別進行觀察。如果 value 是對象，則使用 walk 遍歷 value 上每個key，對每個 key 調用 defineReactive 來獲得該 key 的 set/get 控制權。
 
 解釋下上面用到的幾個函數的功能：
 
-* observeArray: 遍歷數組，對數組的每個元素調用observe
-* observe: 檢查對像上是否有__ob__屬性，如果存在，則表明該對像已經處於Observer的觀察中，如果不存在，則new Observer來觀察對象（其實還有一些判斷邏輯，為了便於理解就不贅述了）
-* walk: 遍歷對象的每個key，對對像上每個 key 的數據調用 defineReactive
-* defineReactive: 通過Object.defineProperty設置對象的key屬性，使得能夠捕獲到該屬性值的set/get動作。一般* 是 由Watcher的實例對象進行get操作，此時Watcher的實例對象將被自動添加到Dep實例的依賴數組中，在外部操作觸發了set時，將通過Dep實例的notify來通知所有依賴的watcher進行更新。
+* observeArray: 遍歷數組，對數組的每個元素調用 observe
+* observe: 檢查對像上是否有__ob__屬性，如果存在，則表明該對像已經處於 Observer 的觀察中，如果不存在，則 new Observer 來觀察對象（其實還有一些判斷邏輯，為了便於理解就不贅述了）
+* walk: 遍歷對像的每個 key，對對像上每個 key 的數據調用 defineReactive
+* defineReactive: 通過 Object.defineProperty 設置對象的 key 屬性，使得能夠捕獲到該屬性值的 set/get 動作。一般是由  Watcher的實例對象進行 get 操作，此時 Watcher 的實例對象將被自動添加到 Dep 實例的依賴數組中，在外部操作觸發了 set 時，將通過 Dep 實例的 notify 來通知所有依賴的 watcher 進行更新。
 
 如果不太理解上面的文字描述可以看一下圖：
 

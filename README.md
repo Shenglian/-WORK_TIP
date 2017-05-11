@@ -10,11 +10,12 @@
 
 > Vanilla
 
-1. [The Basics of DOM Manipulation in Vanilla JavaScript (No jQuery)](https://goo.gl/Pd9ym7)
-2. [常用API合集](https://www.kancloud.cn/dennis/tgjavascript/241852) - 其他地方也能看
-3. [js 常用api背诵](http://www.jianshu.com/p/b678628d114c)
-4. [fullscreen api](https://heeroluo.net/article/detail/97/native-fullscreen-javascript-api)
-5. [Display fullscreen website using javascript (Internet Explorer/Safari/Chrome/Firefox)](http://xme.im/display-fullscreen-website-using-javascript)
+* [The Basics of DOM Manipulation in Vanilla JavaScript (No jQuery)](https://goo.gl/Pd9ym7)
+* [常用API合集](https://www.kancloud.cn/dennis/tgjavascript/241852) - 其他地方也能看
+* [js 常用api背诵](http://www.jianshu.com/p/b678628d114c)
+* [fullscreen api](https://heeroluo.net/article/detail/97/native-fullscreen-javascript-api)
+* [Display fullscreen website using javascript (Internet Explorer/Safari/Chrome/Firefox)](http://xme.im/display-fullscreen-website-using-javascript)
+* [不可错过的javascript迷你库](http://yanhaijing.com/javascript/2015/12/29/mini-js-lib/)
 
 ```js
 
@@ -51,10 +52,10 @@ void 0; // undefied;
 ```
 
 > Prototype
-0. [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
-1. [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
-2. [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
-3. [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
+* [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
+* [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
+* [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
+* [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
 
 > Scope
 
@@ -80,6 +81,24 @@ void 0; // undefied;
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
 3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
 4. [Callback Promise Generator Async-Await 和异常处理的演进](http://www.jianshu.com/p/78dfb38ac3d7)
+
+> 額外
+
+* [Javascript分号，加还是不加？](https://segmentfault.com/a/1190000000437434)
+```js
+s = function(x){return x}
+(1 + 2).toString()
+// parse to 
+s = function(x){return x}(1 + 2).toString()
+// so we can to 
+s = function(x){return x}
+;(1 + 2).toString()
+// we often to see 
+;(function(){
+    // ...
+})();
+// 在 function 的前面加了一个分号，目的就是为了防止整个函数的返回值作为参数送入上一条语句之中。
+```
 
 > 面試
 
@@ -298,3 +317,7 @@ void 0; // undefied;
 
 * [uxdesign.cc](https://uxdesign.cc/)
 * [design-better-data-tables](https://uxdesign.cc/design-better-data-tables-4ecc99d23356)
+
+# Cheatsheet
+
+* [Terminal Cheatsheet for Mac (Basics)](https://github.com/0nn0/terminal-mac-cheatsheet)
