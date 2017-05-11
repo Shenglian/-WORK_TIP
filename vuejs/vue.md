@@ -43,11 +43,11 @@ class Observer {
 }
 ```
 
-[hasProto from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
 ```js
 // can we use __proto__? 
 export const hasProto = '__proto__' in {}
 ```
+[hasProto from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
 
 ```js
 // helpers
