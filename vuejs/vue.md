@@ -13,7 +13,9 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
 
 示意圖如下：
 
-![Observer-img][Observer]
+<div style="text-align: center">
+  <img src="https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png"/>
+</div>
 
 # Observer
 
@@ -86,7 +88,7 @@ value 是需要被觀察的數據對象，在構造函數中，會給 value 增�
 
 示意圖如下：
 
-<center>![Observer-flow-img][Observer-flow]</center>
+![Observer-flow-img][Observer-flow]
 
 # Dep
 
