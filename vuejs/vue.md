@@ -13,9 +13,7 @@ observer 是 Vue核心中最重要的一個模塊（個人認為），能夠實�
 
 示意圖如下：
 
-<div style="text-align: center">
-  <img src="https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png"/>
-</div>
+![Observer-img][Observer]
 
 # Observer
 
@@ -44,9 +42,11 @@ class Observer {
     }
   }
 }
+```
 
 [source from](https://github.com/vuejs/vue/blob/9478fde8c92d225661dcb4c949d0035284600fff/src/core/util/env.js#L8)
 
+```js
 // can we use __proto__? 
 export const hasProto = '__proto__' in {}
 
@@ -75,7 +75,7 @@ function copyAugment (target: Object, src: Object, keys: Array<string>) {
 }
 
 ```
-value 是需要被觀察的數據對象，在構造函數中，會給 value 增加 __ob__ 屬性，作為數據已經被 Observer 觀察的標誌。如果 value 是數組，就使用 observeArray 遍歷 value，對 value 中每一個元素調用 observe 分別進行觀察。如果 value 是對象，則使用 walk 遍歷 value 上每個key，對每個 key 調用 defineReactive 來獲得該 key 的 set/get 控制權。
+value 是需要被觀察的數據對象，在構造函數中，會給 value 增加 <b>__ob__</b> 屬性，作為數據已經被 Observer 觀察的標誌。如果 value 是數組，就使用 observeArray 遍歷 value，對 value 中每一個元素調用 observe 分別進行觀察。如果 value 是對象，則使用 walk 遍歷 value 上每個key，對每個 key 調用 defineReactive 來獲得該 key 的 set/get 控制權。
 
 解釋下上面用到的幾個函數的功能：
 
