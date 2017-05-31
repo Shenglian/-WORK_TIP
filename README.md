@@ -25,8 +25,11 @@ Array.from(allElements).forEach(element => {
     console.log(event.target.value)
   })
 })
+```
 
 [JavaScript animations](https://javascript.info/js-animation)
+
+```js
 // animate window.requestAnimationFrame()
 const start = window.performance.now()
 const duration = 2000
@@ -39,7 +42,6 @@ window.requestAnimationFrame(function fadeIn (now) {
     window.requestAnimationFrame(fadeIn)
   }
 }
-
 ```
 
 ```js
@@ -119,85 +121,8 @@ s = function(x){return x}
 ## Angularjs
 
 1. directive [區別 $eval, $parse 和 $observe](https://github.com/Shenglian/work-tip/blob/master/angularjs/directive.md)
-  1. 參考 [angular-infinite-scroll](https://github.com/sparkalow/angular-infinite-scroll/blob/master/src/infinite-scroll.js)
-  2. 我自己寫的
-  ```js
-  // 我自己寫的
-  app.directive('infiniteScroll', [
-    "$window", 
-    function ($window) {
-      return {
-        /**
-        * attrs.canLoad = 決定能不能繼續 load
-        * attrs.isFinish = 判斷是否已經沒有資料
-        * attrs.threshold = 距離多少才拉資料
-        * infinite-scroll = call method
-        * 
-        * HTML:
-        * <div infinite-scroll="addItems()" can-load="canLoad" is-finish="isFinish" threshold="100"></div>
-        * 
-        * CSS:
-        * .infinite-scroll-style {
-              opacity: 0;
-              margin: 20px auto;
-              width: 100%;
-              height: 44px;
-              line-height: 44px;
-              text-align: center;
-              background-color: #1EA9D4;
-              font-size: 14px;
-              color: #FFFFFF;
-
-              border-radius: 5px;
-              transition: all, .3s;
-              cursor: pointer;
-              
-            }
-
-            .infinite-scroll-style:hover {
-              background-color:#38678f;
-            }
-
-            .infinite-scroll-style.finish {
-              opacity: 1;
-            }
-        * 
-        * 範例：
-        * brand_master_management.js 
-        * && 
-        * brand_master_management/index.html
-        */
-        link: function (scope, element, attrs) {
-          var offset = parseInt(attrs.threshold) || 0;
-          var e = element[0];
-
-          function scrollEvent() {
-            if (scope.$eval(attrs.canLoad) && e.offsetTop - window.innerHeight - window.pageYOffset <= offset) {
-              scope.$apply(attrs.infiniteScroll);
-            } 
-
-            // 因為還要 filter 資料，不能 remove eventlistener
-            // if (scope.$eval(attrs.isFinish)) {
-            //   window.removeEventListener('scroll', throttleScrollEvent, false);
-            // }
-          }
-
-          // bind lodash throttle
-          var throttleScrollEvent = _.throttle(scrollEvent, 100);
-
-          window.addEventListener('scroll', throttleScrollEvent, false);
-
-          // click to back Top
-          e.addEventListener('click', function() {
-            window.scrollTo(0, 0);
-          }, false);
-          
-        }
-      };
-    }]);
-  ```
+  * 參考 [angular-infinite-scroll](https://github.com/sparkalow/angular-infinite-scroll/blob/master/src/infinite-scroll.js)
   
-
 ## Vue
 
 * VueCheatSheet
@@ -229,7 +154,7 @@ s = function(x){return x}
 
 ## Public API
 
-1. [Public APIs](https://github.com/toddmotto/public-apis#photography)
+1. [Public APIs](https://github.com/toddmotto/public-apis)
 
 ## Css
 
@@ -240,6 +165,9 @@ s = function(x){return x}
 3. [Flexboxdefense](http://www.flexboxdefense.com/)
 4. [Flex 基礎文章](http://www.w3cplus.com/css3/understanding-flexbox-everything-you-need-to-know.html)
 5. [Flex 比較深入的文章](http://www.w3cplus.com/css3/flexbox-layout-and-calculation.html)
+
+### css variables
+* [CSS 变量教程](http://www.ruanyifeng.com/blog/2017/05/css-variables.html)
 
 > Tip
 
@@ -279,8 +207,17 @@ s = function(x){return x}
 1. [bash-guide](https://github.com/Idnan/bash-guide)
 
 ## DevTool 
-0. [DevTips](https://umaar.com/dev-tips/v)
-1. [Chrome DevTools: A Modern Front-End Workflow - video and slides available for my Render Conf talk](https://umaar.com/dev-tips/140-modern-web-workflow-renderconf/)
+* [DevTips](https://umaar.com/dev-tips/v)
+* [Chrome DevTools: A Modern Front-End Workflow - video and slides available for my Render Conf talk](https://umaar.com/dev-tips/140-modern-web-workflow-renderconf/)
+
+1. Setting > General > Show rulers 下可以啟用尺規，當滑鼠停留在控制台顯示的某個元素上或者選中一個元素的時候，會顯示出來。
+2. Select element > Break on > subtree modification
+                               attribute modification
+                               node removal
+代表監聽底下所限定的條件，非常好用。
+
+* [inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
+* [Memory problems](https://developers.google.com/web/tools/chrome-devtools/memory-problems/)
 
 ## Ruby on Rails
 0. [為你自己學 Ruby on Rails](http://railsbook.tw/table-of-content)
