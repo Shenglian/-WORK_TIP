@@ -1,16 +1,6 @@
 
 # Array 
 
-> pushState - add query at location url [stackoverflow](https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page)
-```js
-function addUrlQuery(query_type, value) {
-  if (history.pushState) {
-    const newurl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?${query_type}=${value}`
-    window.history.pushState({ path: newurl }, '', newurl);
-  }
-}
-```
-
 > slice - [question](https://stackoverflow.com/questions/8495687/split-array-into-chunks)
 ```js
   function chunk(size, total) {
@@ -23,3 +13,19 @@ function addUrlQuery(query_type, value) {
 
 ```
 
+> from (es6)
+
+```js
+
+const inputs = document.querySelectorAll('input[name="hello"]');
+
+if ("ES5") {
+  Array.prototype.slice.call(inputs)
+  .forEach(x => console.log(x));
+} else {
+  Array.from(inputs)
+    .filter((x, i) => x < 10)
+    .forEach(x => console.log(x));
+}
+
+```
