@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by igrigorik (http://jsbin.com/zubiyid/59/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <title>JS Bin</title>
+  <script>
+    var previous = [];
+    for (var i = 0; i < localStorage.length; i++){
+      previous.push([localStorage.key(i), localStorage.getItem(localStorage.key(i))]);
+    }
+    localStorage.clear();
+    
+    window.onerror = function(message, url, lineNumber) {  
+      var li = document.createElement('li')
+      li.innerHTML = message + " : " + lineNumber + " in " + url;
+      document.getElementById('error').appendChild(li);
+    };
+    
+    var id = Math.floor(Math.random()*(100-1)+1);
+    
+    function getQSParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    
+    if (!('sendBeacon' in navigator)) {
+      navigator.sendBeacon = function(url, data) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url, true);
+        xhr.setRequestHeader('Content-Type', 'text/plain;charset=UTF-8');
+        xhr.send(data);
+        return true;
+      };
+    }
+    
+    function handleVisibilityChange(e) {
+      var payload = {
+        pageId: id,
+        navType: performance.navigation.type,
+        timestamp: Math.floor(performance.now()),
+        visibility: document.visibilityState || "visibility-not-implemented",
+        event: e.type
+      }
+       
+      var key = payload.event;
+      if (e.type == "visibilitychange") {
+        key = payload.event+"-"+payload.visibility;
+      }   
+      localStorage.setItem(key, JSON.stringify(payload));        
+      
+      console.log(payload);
+      var li = document.createElement('li')
+      li.innerHTML = JSON.stringify(payload);
+      document.getElementById('lifecycle').appendChild(li);
+      
+      var url = getQSParameterByName('beaconUrl');
+      if (url) {
+        navigator.sendBeacon(url, JSON.stringify(payload));
+      }
+    }
+    
+    window.addEventListener("beforeunload", handleVisibilityChange);
+    window.addEventListener("unload", handleVisibilityChange);
+    window.addEventListener("pagehide", handleVisibilityChange);
+    window.addEventListener("pageshow", handleVisibilityChange);
+
+    document.addEventListener('visibilitychange', handleVisibilityChange, false);
+  </script>
+</head>
+<body>
+  <h2>Lifecycle events with Page Visibility + Beacon API</h2>
+  <h3>localStorage (previous view)</h3>
+  <ol id="storage"></ol>
+  
+  <h3>Life cycle</h3>
+  <ol id="lifecycle"></ol>
+  <ol id="error"></ol>
+  
+  <p id="results"></p>
+  <script>
+    var res = document.getElementById('results');
+    var url = getQSParameterByName('beaconUrl');
+    if (url) {
+      res.innerHTML = '<a href='+url+'>see results</a>';
+    } else {
+      res.innerHTML = '<a href=http://requestb.in>create requestb.in</a> and pass in the url via beaconUrl query param';
+    }
+    
+    previous = previous.sort(function(a, b) {
+      return JSON.parse(a[1]).timestamp - JSON.parse(b[1]).timestamp;
+    });
+    
+    for (var i = 0; i < previous.length; i++){
+      var li = document.createElement('li')
+      li.innerHTML = previous[i][0] + ": " + previous[i][1];
+      document.getElementById('storage').appendChild(li);      
+    } 
+
+  </script>
+  <p><a href="https://google.com" target="_blank">google</a></p>
+</body>
+</html>
