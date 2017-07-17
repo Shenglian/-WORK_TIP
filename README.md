@@ -8,6 +8,11 @@
 
 ## Javascript 
 
+
+> Basic
+
+  * by value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
+
 > Vanilla
 
 * [The Basics of DOM Manipulation in Vanilla JavaScript (No jQuery)](https://goo.gl/Pd9ym7)
