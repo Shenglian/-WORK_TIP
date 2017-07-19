@@ -21,7 +21,7 @@
 Object.assign(target, ...sources)
   // method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object.
 
-  // 可以用來設定修改多值 (針對存在的)
+  // 可以用來設定針對存在的值做修改
   Object.assign(oneElement, {
     value: 'hello',
     id: 'world',
@@ -30,6 +30,11 @@ Object.assign(target, ...sources)
   // 要刪除屬性，設定成 null 就好
   oneElement.value = null
 
+  // 合併值
+  let a = { a: 123 };
+  let b = { b: 456 };
+  let c = { c: 789 };
+  Object.assign({}, a, b, c);
 ```
 
 ### create

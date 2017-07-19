@@ -10,6 +10,7 @@
 
 
 > Basic
+  * Date [前往](https://github.com/Shenglian/work-tip/blob/master/js_api/date.md)
 
   * by value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
 
@@ -163,6 +164,10 @@ s = function(x){return x}
 
 ## Css
 
+### Cursor
+
+* [Cursor Style](https://css-tricks.com/almanac/properties/c/cursor/)
+
 ### Layout
 
 1. [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
@@ -179,7 +184,6 @@ s = function(x){return x}
 1. [css-protips](https://github.com/AllThingsSmitty/css-protips)
 2. [Let’s Look at 50+ Interesting CSS Properties & Values](https://css-tricks.com/lets-look-50-interesting-css-properties-values/?utm_source=frontendfocus&utm_medium=email#all)
 
-
 > Unix 
 
 1. [7个你可能不认识的CSS单位](https://github.com/simaQ/cssfun/issues/1)
@@ -192,7 +196,8 @@ s = function(x){return x}
 
 ## Git
 
-1. [git-tips - Git的奇技淫巧](https://goo.gl/Hj7Ss4)
+* [git-tips - Git的奇技淫巧](https://goo.gl/Hj7Ss4)
+* [遇到需要使用 GIT 的問題](https://github.com/Shenglian/work-tip/blob/master/git.md)
 
 ## mobile 坑
 
