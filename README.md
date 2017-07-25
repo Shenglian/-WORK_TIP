@@ -8,19 +8,54 @@
 
 ## Javascript 
 
-
 > Basic
+  
+  > Prototype
+  * [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
+  * [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
+  * [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
+  * [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
+
+  > Scope
+  * [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
+
+  > Closures
+
+  > This
+
+  > Other 
+  * By value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
+  * Javascript分号，加还是不加？[前往](https://segmentfault.com/a/1190000000437434)
+  ```js
+    s = function(x){return x}
+    (1 + 2).toString()
+    // parse to 
+    s = function(x){return x}(1 + 2).toString()
+    // so we can to 
+    s = function(x){return x}
+    ;(1 + 2).toString()
+    // we often to see 
+    ;(function(){
+        // ...
+    })();
+    // 在 function 的前面加了一个分号，目的就是为了防止整个函数的返回值作为参数送入上一条语句之中。
+  ```
+  
+> Js Api
   * Date [前往](https://github.com/Shenglian/work-tip/blob/master/js_api/date.md)
 
-  * by value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
+  * Fullscreen
+    * [fullscreen api](https://heeroluo.net/article/detail/97/native-fullscreen-javascript-api)    
+    * [Display fullscreen website using javascript (Internet Explorer/Safari/Chrome/Firefox)](http://xme.im/display-fullscreen-website-using-javascript)
+  
+  * Animatie
+    [前往](https://javascript.info/js-animation)
+  * [js 常用api背诵](http://www.jianshu.com/p/b678628d114c)
+
+  * [常用API合集](https://www.kancloud.cn/dennis/tgjavascript/241852)
 
 > Vanilla
-
 * [The Basics of DOM Manipulation in Vanilla JavaScript (No jQuery)](https://goo.gl/Pd9ym7)
-* [常用API合集](https://www.kancloud.cn/dennis/tgjavascript/241852) - 其他地方也能看
-* [js 常用api背诵](http://www.jianshu.com/p/b678628d114c)
-* [fullscreen api](https://heeroluo.net/article/detail/97/native-fullscreen-javascript-api)
-* [Display fullscreen website using javascript (Internet Explorer/Safari/Chrome/Firefox)](http://xme.im/display-fullscreen-website-using-javascript)
 * [不可错过的javascript迷你库](http://yanhaijing.com/javascript/2015/12/29/mini-js-lib/)
 
 ```js
@@ -32,8 +67,6 @@ Array.from(allElements).forEach(element => {
   })
 })
 ```
-
-[JavaScript animations](https://javascript.info/js-animation)
 
 ```js
 // animate window.requestAnimationFrame()
@@ -59,16 +92,6 @@ void 0; // undefied;
 
 ```
 
-> Prototype
-* [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
-* [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
-* [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
-* [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
-
-> Scope
-
-1. [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
-
 > event loop
 'macro-task（宏任务）' , 'task'
     'script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering。'
@@ -89,24 +112,6 @@ void 0; // undefied;
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
 3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
 4. [Callback Promise Generator Async-Await 和异常处理的演进](http://www.jianshu.com/p/78dfb38ac3d7)
-
-> 額外
-
-* [Javascript分号，加还是不加？](https://segmentfault.com/a/1190000000437434)
-```js
-s = function(x){return x}
-(1 + 2).toString()
-// parse to 
-s = function(x){return x}(1 + 2).toString()
-// so we can to 
-s = function(x){return x}
-;(1 + 2).toString()
-// we often to see 
-;(function(){
-    // ...
-})();
-// 在 function 的前面加了一个分号，目的就是为了防止整个函数的返回值作为参数送入上一条语句之中。
-```
 
 > 面試
 
@@ -145,10 +150,14 @@ s = function(x){return x}
   * [Always declare your data before use it](https://goo.gl/duZYY6)
   * [Reactive dynamic properties - use $set](https://goo.gl/2RpNXE)
   *  [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
-  * [Deleting Array index in Vue.js - this.delete](https://goo.gl/2ffvqE)
-* [Vue2.0 原始碼簡析：](https://github.com/Shenglian/work-tip/blob/master/vuejs/vue.md)
-* [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
+  * [Deleting Array index in Vue.js - this.
+  > Other 
+  * [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
+  
+* [Vue2.0 原始碼簡析：](https://github.com/Shenglian/work-tip/blob/master/vuejs/vue.m
 
+> Js Api
+  delete](https://goo.gl/2ffvqE)
 * [个迷你vue库，虽然小但功能全面，可以作为想了解vue背后思想以及想学习vue源码而又不知如何入手的入门学习资料。](https://github.com/xiaofuzi/deep-in-vue/blob/master/src/the-super-tiny-vue.js)
 
 * [入門 vuex](https://github.com/Shenglian/work-tip/blob/master/vuejs/vuex.md)
