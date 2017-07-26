@@ -9,7 +9,59 @@
 ## Javascript 
 
 ### Basic
-  
+
+  > for-in
+  ```js
+  for (let index in values) {
+    console.log('index =>', index);
+    console.log(`${index} =>`, values[index]);
+  }
+  ```
+
+  > Decimal base exponents
+  ```js
+  1e0 === 1;
+  1e1 === 10;
+  1e2 === 100;
+  1e3 === 1000;
+  ```
+
+  > Implicit Return Shorthand
+  ```js
+  function calcCircumfunction(diameter) {
+    return Math.PI * diameter;
+  }
+
+  |||
+
+  calcCircumfunction = diameter => (
+    Math.PI * diameter;
+  )
+  ```
+
+  > Mandatory Parameter Shorthand
+  ```js
+  mandatory = () => {
+    throw new Error('Missing parameter');
+  }
+
+  foo = (bar = mandatory()) => {
+    return bar;
+  }
+  ```
+
+  > Operator Shorthand
+  ```js
+  if (x) {
+    y();
+  }
+
+  |||
+
+  // Shorthand:
+  x && y();
+
+  ```
   > Prototype
   * [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
   * [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
