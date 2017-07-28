@@ -20,7 +20,8 @@ Obj.apply(thisObj, [arg1, arg2, ...]);
 
 ```
 
-<a name="copy" id="copy"></a>
+<a name="copy" id="copy">copy</a>
+
 ```js
 // example1 
 
@@ -44,7 +45,7 @@ for (key in results) {
 }
 ```
 
-<a name="reuse" id="reuse"></a>
+<a name="reuse" id="reuse">reuse</a>
 ```js
 
 const Lyonar = {
@@ -77,7 +78,7 @@ function Person() {
 
 ```
 
-<a name="inherit" id="inherit"></a>
+<a name="inherit" id="inherit">inherit</a>
 ```js
 
 function Parent() {
