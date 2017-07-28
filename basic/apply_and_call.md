@@ -70,7 +70,9 @@ function Person() {
 }
 
 [Lyonar, Songhai].map(function(p){
-    Person.call(p);
+    var _person = Person.call(p);
+    // if _person is String/Function
+    return Object.prototype.toString.call(_person) === "[obejct Function]" ? _person() : _person
 });
 
 ```
