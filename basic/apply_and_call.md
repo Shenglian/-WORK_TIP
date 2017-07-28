@@ -69,8 +69,9 @@ function Person() {
   return personInfo;
 }
 
-Person.call(Lyonar);
-Person.call(Songhai);
+[Lyonar, Songhai].map(function(p){
+    Person.call(p);
+});
 
 ```
 
