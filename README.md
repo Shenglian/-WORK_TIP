@@ -73,7 +73,21 @@
 
   > Closures
 
-  > This
+  > This (指向，及目標方向，所對的方位)
+  * 普通調用 - (誰調用，就指向誰)
+  * apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
+  * arrow function this === current function
+  * normal function this === window
+
+  > event loop
+  'macro-task（宏任务）' , 'task'
+      'script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering。'
+  'micro-task（微任务）' , 'jobs'
+      'process.nextTick, Promise, Object.observe(已废弃), MutationObserver(html5新特性)'
+
+  1. [前端基础进阶（十二）：深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f#)
+  2. [JavaScript：彻底理解同步、异步和事件循环(Event Loop)](https://segmentfault.com/a/1190000004322358)
+  3. *[Philip Roberts: What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ) - JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”.
 
   > Other 
   * By value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
@@ -143,15 +157,6 @@ window.requestAnimationFrame(function fadeIn (now) {
 void 0; // undefied;
 
 ```
-
-> event loop
-'macro-task（宏任务）' , 'task'
-    'script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering。'
-'micro-task（微任务）' , 'jobs'
-    'process.nextTick, Promise, Object.observe(已废弃), MutationObserver(html5新特性)'
-
-1. [前端基础进阶（十二）：深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f#)
-2. [JavaScript：彻底理解同步、异步和事件循环(Event Loop)](https://segmentfault.com/a/1190000004322358)
 
 > Promise
 

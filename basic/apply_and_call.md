@@ -46,6 +46,7 @@ for (key in results) {
 ```
 
 <a name="reuse" id="reuse">reuse</a>
+
 ```js
 
 const Lyonar = {
@@ -79,6 +80,7 @@ function Person() {
 ```
 
 <a name="inherit" id="inherit">inherit</a>
+
 ```js
 
 function Parent() {
