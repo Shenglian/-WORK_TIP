@@ -78,20 +78,53 @@
   * apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
   * arrow function this === current function
   * normal function this === window
+  * (This in JavaScript)[https://zellwk.com/blog/this/]
+    ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
+    ps2. simple functino this 都是指向 windows
+```js
+  var o = {
+      doSomeThingLater() {
+              console.log('1. where is this? ', this);
+          setTimeout(function(){
+              console.log('2. where is this? ', this);
+              try {
+                  this.speakLeet();
+              } catch(error) {
+                  console.log('error', error);
+              }
+              
+          }, 0)
+      },
+      speakLeet() {
+          console.log('Here is speakLeet function');
+      },
+      todoList() {
+          console.log('3. where is this? ', this);
+          this.speakLeet();  
+      },
+  }
 
-  > event loop
-  'macro-task（宏任务）' , 'task'
-      'script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering。'
-  'micro-task（微任务）' , 'jobs'
-      'process.nextTick, Promise, Object.observe(已废弃), MutationObserver(html5新特性)'
+  o.todoList();
+  o.doSomeThingLater();
+```
+    
 
-  1. [前端基础进阶（十二）：深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f#)
-  2. [JavaScript：彻底理解同步、异步和事件循环(Event Loop)](https://segmentfault.com/a/1190000004322358)
-  3. *[Philip Roberts: What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ) - JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”.
+  > Event-Loop
+    ```
+    macrotask（tasks）: script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering
+    microtask（jobs）: process.nextTick, Promise, Object.observe(已废弃), MutationObserver(html5新特性)'
+
+    microtasks 會先執行完，才會去執行 marcotasks 
+    ```
+  * [前端基础进阶（十二）：深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f#)
+  * *[Philip Roberts: What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ) - JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”.
+  * [浏览器渲染详细过程：重绘、重排和 composite 只是冰山一角](https://juejin.im/entry/590801780ce46300617c89b8)
+  * [JavaScript中的microtask与task](https://flyyang.github.io/2017/03/07/javascript%E4%B8%AD%E7%9A%84microtask%E4%B8%8Etask/)
 
   > Other 
   * By value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
   * Javascript分号，加还是不加？[前往](https://segmentfault.com/a/1190000000437434)
+  
   ```js
     s = function(x){return x}
     (1 + 2).toString()
@@ -236,11 +269,12 @@ void 0; // undefied;
 
 ### Layout
 
-1. [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
-2. [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
-3. [Flexboxdefense](http://www.flexboxdefense.com/)
-4. [Flex 基礎文章](http://www.w3cplus.com/css3/understanding-flexbox-everything-you-need-to-know.html)
-5. [Flex 比較深入的文章](http://www.w3cplus.com/css3/flexbox-layout-and-calculation.html)
+* [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
+* [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
+* [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/?utm_campaign=CodeTengu&utm_medium=email&utm_source=CodeTengu_99)
+* [Flexboxdefense](http://www.flexboxdefense.com/)
+* [Flex 基礎文章](http://www.w3cplus.com/css3/understanding-flexbox-everything-you-need-to-know.html)
+* [Flex 比較深入的文章](http://www.w3cplus.com/css3/flexbox-layout-and-calculation.html)
 
 ### css variables
 * [CSS 变量教程](http://www.ruanyifeng.com/blog/2017/05/css-variables.html)
@@ -334,3 +368,10 @@ void 0; // undefied;
 # Cheatsheet
 
 * [Terminal Cheatsheet for Mac (Basics)](https://github.com/0nn0/terminal-mac-cheatsheet)
+
+# Rails 
+
+* [Rails 命令列](http://rails.ruby.tw/command_line.html)
+
+# Service-workers
+* [Understanding Service Workers](http://blog.88mph.io/2017/07/28/understanding-service-workers/)
