@@ -4,7 +4,9 @@
 ## 演算法
 
 1. [演算法](https://sort.hust.cc/1.bubbleSort.html)
-2. 
+2. [算法：找出缺失的整数](http://blog.jobbole.com/106521/)
+3. [算法：如何判断链表有环？](http://blog.jobbole.com/106227/#comment-158642)
+4. [算法：什么是 B 树？](http://blog.jobbole.com/111757/)
 
 ## Javascript 
 
@@ -16,11 +18,14 @@
   
   變數三階段： created, initialize, assign 
 
-  > `var`, 有包含這三階段，只有 `created`, `initialize` 被 `hoisting` 。 `initialize` 時，為 undefined。
-  > `fn` , 有包含這三階段，並且都被 `hoisting` 。
-  > `let`, `const` 只有在 `created` 階段才有被 `hosting`，在沒有任何的 `initialize` 的情形發生，強制讀取 `let` or `const` 只是會發生
-  reference error : let x is not defined
-  > `const` 沒有 assign （很合理）
+  > `var`
+  有包含這三階段，只有 `created`, `initialize` 被 `hoisting` 。 `initialize` 時，為 undefined。
+  > `fn` 
+  有包含這三階段，並且都被 `hoisting` 。
+  > `let`, `const` 
+  只有在 `created` 階段才有被 `hosting`，在沒有任何的 `initialize` 的情形發生，強制讀取 `let` or `const` 只是會發生reference error : let x is not defined
+  > `const` 
+  沒有 assign （很合理）
 
   - 結論：`let` and `const` 這些 keyword 會被這樣設計的原因。可能是要降低記憶體吧（其中之一）。當需要用到的時候，再去 `initialize` ，然後使用它們。
 
@@ -95,7 +100,8 @@
   * normal function this === window
   * (This in JavaScript)[https://zellwk.com/blog/this/]
     ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
-    ps2. simple functino this 都是指向 windows
+    ps2. simple function this 都是指向 windows
+
 ```js
   var o = {
     doSomeThingLater() {
@@ -208,8 +214,9 @@ void 0; // undefied;
 
 > Promise
 
-1. [透彻掌握 Promise 的使用，读这篇就够了](https://juejin.im/entry/58e1d720ac502e006c0e0196)
-2. [從Promise開始的JavaScript異步生活](https://eyesofkids.gitbooks.io/javascript-start-es6-promise/content/)
+* [透彻掌握 Promise 的使用，读这篇就够了](https://juejin.im/entry/58e1d720ac502e006c0e0196)
+* [從Promise開始的JavaScript異步生活](https://eyesofkids.gitbooks.io/javascript-start-es6-promise/content/)
+* [八段代码彻底掌握Promise](https://goo.gl/7dnJR5) 
 
 > Async Await
 
@@ -308,6 +315,7 @@ void 0; // undefied;
 > CommonsChunkPlugin
 
 1. [CommonsChunkPlugin](https://medium.com/webpack/webpack-bits-getting-the-most-out-of-the-commonschunkplugin-ab389e5f318)
+2. [HTML-WEBPACK-TEMPLATE 參數設定](https://goo.gl/xwcY6t)
 
 ## Git
 
@@ -390,3 +398,6 @@ void 0; // undefied;
 
 # Service-workers
 * [Understanding Service Workers](http://blog.88mph.io/2017/07/28/understanding-service-workers/)
+
+# HTTP
+* [HTTP1.0、HTTP1.1和HTTP2.0的区别](http://www.jianshu.com/p/be29d679cbff)
