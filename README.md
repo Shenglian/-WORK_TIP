@@ -1,6 +1,16 @@
 # work-tip
 工作上小技巧
 
+## 需要做筆記
+* [JavaScript 疲劳终极指南：我们行业的真相](http://www.zcfy.cc/article/3914)
+* [CSS技巧之'text-justify'](http://www.zcfy.cc/article/text-justify-css-tricks-3946.html?t=new)
+* [Node.js教程：使用async库来优化代码 - Node Beginner Blog](https://goo.gl/z6Cssp)
+* [去其糟粕，取其精华——我如何重拾对 JavaScript 的爱](https://goo.gl/BC27fU) - 
+  - functional javascript
+  - replace `for loop`, `break`, `switch`
+* [八段代码彻底掌握Promise](https://goo.gl/xW8AMm)
+* [JavaScript核心概念归纳整理](https://mp.weixin.qq.com/s/I7A1iC8Et6uOGZ234DsTlA)
+
 ## 演算法
 
 1. [演算法](https://sort.hust.cc/1.bubbleSort.html)
