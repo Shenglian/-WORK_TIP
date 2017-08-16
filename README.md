@@ -383,16 +383,6 @@ void 0; // undefied;
 # WebGL && Three.js
 * [图解WebGL&Three.js工作原理](http://www.cnblogs.com/wanbo/p/6754066.html)
 
-# 問題的本質
-
-> 從問題的本質 (管理資料和邏輯) 來看，自然會明白這些設計準則，還有區分出設計和實作 (準則和表現方式)。剩下的是衍生想法，像是管理 state 方法的優先順序:
-
-* 沒有 member field (沒 state 最好!)
-* 有 immutable member field (非得有 state 不可的話，至少讓它不可修改)
-* private mutable member field (非改不可的話，盡可能減少能改它的程式碼)
-
-> 重點還是掌握問題的本質，避免迷失在解決的方案之中。總結來說，一套程式語言有一套思維，試過多套不同特性的語言後，藉由它們之間的同異處，可以察覺這些語言想解決的問題是什麼。繼而明白真正的問題是什麼，再回饋到解決問題的思維中，避免落入特定解決模式裡 (如道地的 OOP 或 FP)。起初學不同語言只是覺得好玩，誤打誤撞得到這樣的體會，滿有意思的。
-
 # UX
 
 * [uxdesign.cc](https://uxdesign.cc/)
@@ -411,3 +401,6 @@ void 0; // undefied;
 
 # HTTP
 * [HTTP1.0、HTTP1.1和HTTP2.0的区别](http://www.jianshu.com/p/be29d679cbff)
+
+# Google Tag Manager
+* [Bind UserId Data to GA](http://ieg.wnet.org/2017/04/gtm-user-id-tracking-4-steps/)
