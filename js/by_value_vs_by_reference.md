@@ -5,7 +5,7 @@
   這時候變數會在記憶體中存在一個自我的位置，每個 primitive value 都是 unique location
 
 ### by reference
-  假如變數是物件，只單純修改變數的值，是變成 by reference
+  假如變數是物件(object)/方法(fn)，只單純修改變數的值，是變成 by reference
 
   ```js
     let a = { greeting: 123 };

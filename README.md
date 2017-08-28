@@ -1,3 +1,6 @@
+
+[O_nonation_img]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png
+
 # work-tip
 工作上小技巧
 
@@ -17,6 +20,56 @@
 2. [算法：找出缺失的整数](http://blog.jobbole.com/106521/)
 3. [算法：如何判断链表有环？](http://blog.jobbole.com/106227/#comment-158642)
 4. [算法：什么是 B 树？](http://blog.jobbole.com/111757/)
+
+### Time vs input size
+![Time_vs_input_size][O_nonation_img]
+
+* fizzbuzz
+```js
+function fizzbuzz(num) {
+  if (num % 5 === 0 && num % 3 === 0) {
+    console.log('fizzbuzz');
+  } else if (num % 3 === 0) {
+    console.log('fizz');
+  } else if (num % 5 === 0) {
+    console.log('buzz');
+  } else {
+    console.log(i);
+  }
+}
+```
+* Harmless Ransom Note
+```js
+function harmlessRansomNote (noteText, magazineText) {
+  var noteArr = noteText.split(' ');
+  var magazineArr = magazineText.split(' ');
+  var magazineObj = {};
+
+  magazineArr.forEach(word => {
+    if (!magazineObj[word]) magazineObj[word] = 0;
+    magazineObj[word]++;
+  });
+
+  var noteIsPossible = true;
+  noteArr.forEach(word => {
+    if (!magazineObj[word]) {
+      noteIsPossible = false;
+    }
+  });
+
+  return noteIsPossible;
+}
+```
+* isPalindrome
+```js
+function isPalindrome(str) {
+  var re = /[^A-Za-z0-9]/g;
+  var string = str.toLowerCase().replace(re, '');
+  var reserveString = string.split('').reverse().join('');
+
+  return string === reserveString;
+}
+```
 
 ## Javascript 
 
@@ -404,3 +457,20 @@ void 0; // undefied;
 
 # Google Tag Manager
 * [Bind UserId Data to GA](http://ieg.wnet.org/2017/04/gtm-user-id-tracking-4-steps/)
+
+# npm [additional shorthand](https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties)
+
+* npm i --save pkg     => npm i -S pkg
+* npm i --save-dev pkg => npm i -D pkg
+* npm test             => npm t
+* npm ls --depth 0 (list installed packages)
+* npm ls -g --depth 0  (list installed global packages)
+* ./node_modules/.bin/<name> (execute local mode_module path)
+* npm repo <name>
+* npm home
+* npm docs
+* npm version <name>
+* npm search <name>
+* npm info/view <name> version
+
+# Frontend-Cheat-Sheets - [Sheets](https://github.com/logeshpaul/Frontend-Cheat-Sheets)
