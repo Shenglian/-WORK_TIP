@@ -1,5 +1,5 @@
 
-[O_nonation_img]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/observer.png
+[O_nonation_img]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/O_notation.png
 
 # work-tip
 工作上小技巧
