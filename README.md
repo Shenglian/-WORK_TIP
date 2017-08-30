@@ -72,7 +72,6 @@ function isPalindrome(str) {
 ```
 * Reverse Array In Place
 ```js
-
 // Be sure to manipulate the array passed in
 // Do NOT push elements into a new array and return that array
 // Do not use array.reverse() method
@@ -85,8 +84,9 @@ function reverseArrayInPlace(arr) {
   
   return arr;
 }
+```
 * Mean, Median, Mode
-
+```js
 function meanMedianMode(arr) {
   return {
     mean: getMean(arr),
