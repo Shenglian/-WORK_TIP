@@ -70,6 +70,97 @@ function isPalindrome(str) {
   return string === reserveString;
 }
 ```
+* Reverse Array In Place
+```js
+
+// Be sure to manipulate the array passed in
+// Do NOT push elements into a new array and return that array
+// Do not use array.reverse() method
+function reverseArrayInPlace(arr) {
+  for (var i = 0; i < arr.length / 2; i++) {
+    var tempVar = arr[i];
+    arr[i] = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = tempVar;
+  }
+  
+  return arr;
+}
+* Mean, Median, Mode
+
+function meanMedianMode(arr) {
+  return {
+    mean: getMean(arr),
+    median: getMedian(arr),
+    mode: getMode(arr)
+  }
+}
+
+function getMean(arr) {
+  var sum = 0;
+  
+  for (var i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum / arr.length;
+}
+
+function getMedian(arr) {
+  var median = 0;
+
+  if (arr.length % 2 !== 0) {
+    median = arr[Math.floor(arr.length / 2)];
+  } else {
+    var med1 = arr[(arr.length / 2) - 1];
+    var med2 = arr[(arr.length / 2)];
+
+    median = (med1 + med2) / 2;
+  }
+
+  return median;
+}
+
+function getMode(arr) {
+  
+  var modeObj = {};
+  arr.forEach(num => {
+    if (!modeObj[num]) modeObj[num] = 0;
+    modeObj[num]++;
+  });
+
+  var MaxFrequency = 0;
+  var modes = [];
+  for (num in modeObj) {
+    if (modeObj[num] > MaxFrequency) {
+      MaxFrequency = modeObj[num];
+      modes = [ num ];
+    } else if (modeObj[num] === MaxFrequency) modes.push(num);
+  }
+
+  if (modes.length === Object.keys(modeObj).length) modes = 0;
+
+  return modes;
+}
+```
+* twoSum
+```js
+function twoSum(arrayNum, sum) {
+  var pairs = [];
+  var hashTable = [];
+
+  for (var i = 0; i < arrayNum.length; i++) {
+    var currentNum = arrayNum[i];
+    // 假如要算兩者差異數，sum and currentNum 互相調換就行
+    var counterNum = sum - currentNum;
+    if (hashTable.indexOf(counterNum) > -1) {
+      pairs.push([ currentNum, counterNum ]);
+    }
+    hashTable.push(currentNum);
+  }
+
+  return pairs;
+}
+```
 
 ## Javascript 
 
