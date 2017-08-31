@@ -610,3 +610,6 @@ function response(data) {
 * npm info/view <name> version
 
 # Frontend-Cheat-Sheets - [Sheets](https://github.com/logeshpaul/Frontend-Cheat-Sheets)
+
+# Notification
+* [利用 JavaScript 實作瀏覽器推播通知](https://cythilya.github.io/2017/07/09/notification/)
