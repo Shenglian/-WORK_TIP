@@ -259,23 +259,22 @@ function twoSum(arrayNum, sum) {
 ```js
   var o = {
     doSomeThingLater() {
-            console.log('1. where is this? ', this);
-        setTimeout(function(){
-            console.log('2. where is this? ', this);
-            try {
-                this.speakLeet();
-            } catch(error) {
-                console.log('error', error);
-            }
-            
-        }, 0)
+      console.log('1. where is this? ', this);
+      setTimeout(function(){
+        console.log('2. where is this? ', this);
+        try {
+          this.speakLeet();
+        } catch(error) {
+          console.log('error', error);
+        }          
+      }, 0)
     },
     speakLeet() {
-        console.log('Here is speakLeet function');
+      console.log('Here is speakLeet function');
     },
     todoList() {
-        console.log('3. where is this? ', this);
-        this.speakLeet();  
+      console.log('3. where is this? ', this);
+      this.speakLeet();  
     },
   }
 
@@ -378,6 +377,52 @@ void 0; // undefied;
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
 3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
 4. [Callback Promise Generator Async-Await 和异常处理的演进](http://www.jianshu.com/p/78dfb38ac3d7)
+
+> 非同步
+
+* [非同步](https://cythilya.github.io/2017/06/27/asynchrony-now-and-later/)
+
+```js
+// 分段處理數據
+function get(url) {
+  return new Promise((resolve, reject) => {
+    const req = new XMLHttpRequest();
+    req.open('GET', url);
+    req.onload = () => req.status === 200 ? resolve(req.response) : reject(Error(req.statusText));
+    req.onerror = (e) => reject(Error(`Network Error: ${e}`));
+    req.send();
+  });
+}
+
+get('https://gist.githubusercontent.com/Shenglian/57b157cd8c9c52fa9af9fcdf17becea0/raw/9cb237c9a332d19caab674354c831418126fd8b7/person.json')
+.then((data) => {
+    var result = JSON.parse(data);
+    response(result);
+})
+.catch((error) => {
+    console.log('error', error);
+});
+
+var res = [];
+
+function response(data) {
+  
+  var chunk = data.splice(0, 100);
+  res = res.concat(chunk.map(function(p){
+    return p.age;
+  }));
+
+  console.log(res);
+
+  if (data.length > 0) {
+    setTimeout(function(){
+      response(data);
+      
+    }, 0);
+  }
+}
+
+```
 
 > 面試
 
