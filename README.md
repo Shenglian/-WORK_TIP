@@ -484,6 +484,14 @@ function response(data) {
 
 ## Css
 
+### Css Selectors - [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+```css
+  [attribute~=value] Selects all elements with a title attribute containing the word
+  [attribute*=value] Selects every element whose attribute value contains the substring
+```
+### square
+* [纯 CSS 实现自适应正方形](https://idiotwu.me/css-responsive-square/)
+
 ### Cursor
 
 * [Cursor Style](https://css-tricks.com/almanac/properties/c/cursor/)
