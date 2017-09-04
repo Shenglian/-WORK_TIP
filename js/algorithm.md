@@ -6,6 +6,9 @@
 * [ReverseArrayInPlace](#ReverseArrayInPlace)
 * [MeanMedianMode](#MeanMedianMode)
 * [twoSum](#twoSum)
+* [binarySearch](#binarySearch)
+* [Fibonacci](#Fibonacci)
+* [fibMemo](#fibMemo)
 
 <a name="fizzbuzz" id="fizzbuzz">fizzbuzz</a>
 
@@ -79,7 +82,6 @@ function reverseArrayInPlace(arr) {
 
 <a name="MeanMedianMode" id="MeanMedianMode">MeanMedianMode</a>
 
-* Mean, Median, Mode
 ```js
 function meanMedianMode(arr) {
   return {
@@ -156,4 +158,54 @@ function twoSum(arrayNum, sum) {
 
   return pairs;
 }
+```
+
+<a name="binarySearch" id="binarySearch">binarySearch</a>
+
+```js
+// 其實這是要 - 有序陣列
+function binarySearch(numArray, key) {
+  var numArrayIdx = Math.floor(numArray.length / 2);
+  var numArrayEle = numArray[numArrayIdx];
+
+  if (numArrayEle === key) return true;
+  else if (numArrayEle < key && numArray.length > 1) {
+    return binarySearch(numArray.splice(numArrayIdx, numArray.length), key);
+  }
+  else if (numArrayEle > key && numArray.length > 1) {
+    return binarySearch(numArray.splice(0, numArrayIdx), key);
+  }
+  else return false;
+}
+
+```
+
+<a name="Fibonacci" id="Fibonacci">Fibonacci</a>
+
+```js
+
+function Fibonacci(position) {
+  if (position < 3) return 1;
+  return Fibonacci(position - 1) + Fibonacci(position - 2);
+}
+
+```
+
+<a name="fibMemo" id="fibMemo">fibMemo</a>
+
+```js
+
+function fibMemo(index, cache) {
+  cache = cache || [];
+  if (cache[index]) return cache[index];
+  else {
+    if (index < 3) return 1;
+    else {
+      cache[index] = fibMemo(index - 1, cache) + fibMemo(index - 2, cache);
+    }
+  }
+
+  return cache[index];
+}
+
 ```
