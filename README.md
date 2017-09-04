@@ -359,13 +359,17 @@ function response(data) {
 * [Cursor Style](https://css-tricks.com/almanac/properties/c/cursor/)
 
 ### Layout
-
 * [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
+#### Grid
 * [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
 * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/?utm_campaign=CodeTengu&utm_medium=email&utm_source=CodeTengu_99)
+* [auto-fit vs auto-fill](https://gridbyexample.com/video/series-auto-fill-auto-fit/)
+
+#### Flexbox
 * [Flexboxdefense](http://www.flexboxdefense.com/)
 * [Flex 基礎文章](http://www.w3cplus.com/css3/understanding-flexbox-everything-you-need-to-know.html)
 * [Flex 比較深入的文章](http://www.w3cplus.com/css3/flexbox-layout-and-calculation.html)
+* [Flexbox 佈局](http://www.w3cplus.com/css3/css3-flexbox-layout.html)
 
 ### css variables
 * [CSS 变量教程](http://www.ruanyifeng.com/blog/2017/05/css-variables.html)
