@@ -1,6 +1,3 @@
-
-[O_nonation_img]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/O_notation.png
-
 # work-tip
 工作上小技巧
 
@@ -20,9 +17,6 @@
 2. [算法：找出缺失的整数](http://blog.jobbole.com/106521/)
 3. [算法：如何判断链表有环？](http://blog.jobbole.com/106227/#comment-158642)
 4. [算法：什么是 B 树？](http://blog.jobbole.com/111757/)
-
-### Time vs input size
-![Time_vs_input_size][O_nonation_img]
 
 ## Javascript 
 

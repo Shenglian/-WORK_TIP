@@ -1,3 +1,5 @@
+[O_nonation_img]: https://github.com/Shenglian/WORK_TIP/blob/master/imgs/O_notation.png
+
 > Overview ：
 
 * [fizzbuzz](#fizzbuzz)
@@ -9,6 +11,9 @@
 * [binarySearch](#binarySearch)
 * [Fibonacci](#Fibonacci)
 * [fibMemo](#fibMemo)
+
+### Time vs input size
+![Time_vs_input_size][O_nonation_img]
 
 <a name="fizzbuzz" id="fizzbuzz">fizzbuzz</a>
 
