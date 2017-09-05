@@ -30,3 +30,8 @@
 ```js
   Math.abs("Hello"); // NaN
 ```
+
+> Math.sqrt 平方根
+```js
+  Math.sqrt(16); // 4
+```
