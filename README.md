@@ -339,7 +339,7 @@ function response(data) {
 1. [Public APIs](https://github.com/toddmotto/public-apis)
 
 ## Css
-* [基礎觀念] (https://github.com/Shenglian/css/basic.md) 
+* [基礎觀念](https://github.com/Shenglian/WORK_TIP/blob/master/css/basic.md) 
 
 ### square
 * [纯 CSS 实现自适应正方形](https://idiotwu.me/css-responsive-square/)
