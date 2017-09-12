@@ -339,12 +339,8 @@ function response(data) {
 1. [Public APIs](https://github.com/toddmotto/public-apis)
 
 ## Css
+* [基礎觀念] (https://github.com/Shenglian/css/basic.md) 
 
-### Css Selectors - [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
-```css
-  [attribute~=value] Selects all elements with a title attribute containing the word
-  [attribute*=value] Selects every element whose attribute value contains the substring
-```
 ### square
 * [纯 CSS 实现自适应正方形](https://idiotwu.me/css-responsive-square/)
 
