@@ -364,6 +364,9 @@ function response(data) {
 ### css variables
 * [CSS 变量教程](http://www.ruanyifeng.com/blog/2017/05/css-variables.html)
 
+### SVG
+* [A Guide to SVG Animations (SMIL)](https://css-tricks.com/guide-svg-animations-smil/)
+
 > Tip
 
 1. [css-protips](https://github.com/AllThingsSmitty/css-protips)
