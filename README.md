@@ -480,3 +480,6 @@ function response(data) {
 
 # Notification
 * [利用 JavaScript 實作瀏覽器推播通知](https://cythilya.github.io/2017/07/09/notification/)
+
+# Opensearch 
+* [Opensearch](http://www.wemlion.com/post/opensearch/)
