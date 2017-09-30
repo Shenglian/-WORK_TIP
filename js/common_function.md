@@ -5,7 +5,7 @@
 
 
 # Source Code
-<a href="https://stackoverflow.com/questions/16353211/check-if-year-is-leap-year-in-javascript" name="leapYear" id="leapYear">leapYear</a>
+<a target="_blank" href="https://stackoverflow.com/questions/16353211/check-if-year-is-leap-year-in-javascript" name="leapYear" id="leapYear">leapYear</a>
 
 ```js
 function leapYear(year) {
