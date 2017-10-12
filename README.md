@@ -405,6 +405,27 @@ function response(data) {
 
 1. [bash-guide](https://github.com/Idnan/bash-guide)
 
+* set variable for output 
+  - [來源1](https://stackoverflow.com/questions/4651437/how-to-set-a-variable-to-the-output-from-a-command-in-bash)
+  - [來源2](http://linux.vbird.org/linux_basic/0320bash/0320bash.php#variable)
+```
+OUTPUT="$(ls -1)"
+echo OUTPUT
+```
+
+## AppleScript 
+
+[AppleScript Basic](http://www.jianshu.com/p/76a5ff57798b)
+* [iterate list](https://stackoverflow.com/questions/43613446/why-am-i-not-able-to-iterate-through-my-record-in-applescript)
+
+```
+set usergroup to {user1:{name:"Darth Vader", role:"leader"}, user2:{name:"Yoda", role:"instructor"}}
+repeat with member in (usergroup as list) -- the member variable contains a record
+    display dialog (name of member)
+    --display dialog (role of member)
+end repeat
+```
+
 ## DevTool 
 * [DevTips](https://umaar.com/dev-tips/v)
 * [Chrome DevTools: A Modern Front-End Workflow - video and slides available for my Render Conf talk](https://umaar.com/dev-tips/140-modern-web-workflow-renderconf/)

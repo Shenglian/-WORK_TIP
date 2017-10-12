@@ -9,3 +9,8 @@
 
 * `[attribute~=value]` Selects all elements with attribute containing the word
 * `[attribute*=value]` Selects every element whose attribute value contains the substring
+
+
+### Cursor 
+
+* `cursor: not-allowed` Forbidden cursor
