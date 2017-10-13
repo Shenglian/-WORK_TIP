@@ -416,6 +416,8 @@ echo OUTPUT
 ## AppleScript 
 
 [AppleScript Basic](http://www.jianshu.com/p/76a5ff57798b)
+[AppleScript Loop](https://alvinalexander.com/apple/applescript-for-loop-while-loop-examples)
+
 * [iterate list](https://stackoverflow.com/questions/43613446/why-am-i-not-able-to-iterate-through-my-record-in-applescript)
 
 ```
