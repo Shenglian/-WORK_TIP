@@ -4,6 +4,7 @@
 * [Get First Day Of Month](#Get_First_Day_Of_Month)
 * [Get Last Day Of Month](#Get_Last_Day_Of_Month)
 * [Get Month Length](#Get_Month_Length)
+* [Compare time](#Compare_Time)
 
 
 # Source Code
@@ -38,5 +39,13 @@ function getLastDayOfMonth({ year, month } = {}) {
 ```js
 function getMonthLength({ year, month } = {}) {
   return new Date(year, month, 0).getDate();
+}
+```
+
+<a target="_blank" href="https://stackoverflow.com/questions/35697037/how-to-compare-time-in-js" name="Compare_Time" id="Compare_Time">Compare_Time</a>
+
+```js
+function compareTimeWithNow(compareTime) {
+  return Date.parse(new Date()) > Date.parse(compareTime);
 }
 ```
