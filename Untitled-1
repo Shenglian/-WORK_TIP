@@ -1,0 +1,127 @@
+"use strict"
+
+function f(a) {
+  var args = Array.prototype.slice.call(arguments, f.length);
+  return sum(a, args);
+}
+
+function sum(a, bs) {
+  return bs.map(function(b, i){
+    return b * a;
+  });
+}
+
+console.log('f => ', f(2,3,4,4,5,6,7,8,9,0,111));
+
+
+function what({type, id} = {}, {type2, id2} = {}) {
+  return `${type} - ${id}`;
+}
+
+|||
+
+function what() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      type = _ref.type,
+      id = _ref.id;
+
+  var _ref2 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      type2 = _ref2.type2,
+      id2 = _ref2.id2;
+
+  return type + " - " + id;
+}
+
+
+let originArray = [1,2,3,4,5,6,7,8,3];
+let [head, ...tail] = originArray;
+
+console.log('head ', head);
+console.log('tail ', tail);
+
+const getUAType = function() {
+  let ua = window.navigator.userAgent;
+
+}
+
+function eq(type) {
+  var string = Object.prototype.toString;
+  return string.call(type);
+}
+
+console.log(eq('123'));
+console.log(eq({1: '123'}));
+console.log(eq([1,2,3,4,5,6,7,100]));
+
+console.log(eq(null));
+console.log(eq(undefined));
+
+console.log(eq(1));
+console.log(eq(-1));
+console.log(eq(+1));
+
+console.log(eq(0.1));
+console.log(eq(-0.1));
+console.log(eq(+0.1));
+
+console.log(eq(0));
+console.log(eq(-0));
+console.log(eq(+0));
+
+
+var person = {
+  name: 'sheng',
+  age: 20,
+};
+
+function ad() {
+  console.log.call(null, this.name, this.age);
+}
+
+Function.prototype.callme = function(content) {
+  content.fn = this;
+  content.fn();
+  delete content.fn;
+}
+
+ad.callme(person);
+
+// 
+newFunction();
+
+function newFunction() {
+  console.log('0', Math.floor(3.45));
+  console.log('1', 1.23 | 0);
+  console.log('1-1', 1.56 | 0);
+  console.log('2', 2 | 0);
+  console.log('3', - 4 | 0);
+}
+
+// 
+
+var compareTime = '2017-10-23';
+var currentTime = new Date();
+
+console.log('1', Date.parse(compareTime) > Date.parse(currentTime));
+
+
+function removeRepeatValue(array) {
+  // set object
+  let setObject = new Set(array);
+  // array object
+  let arrayObject = Array.from(setObject);
+  return arrayObject;
+}
+
+console.log('result', removeRepeatValue([1,2,,4,5,7,8,79,,678,678,78,678,1000]));
+
+
+var x = 1,
+y = 2,
+_ref = [x, y];
+
+x = _ref[1];
+y = _ref[0];
+
+console.log(x); // 2
+console.log(y); // 1
