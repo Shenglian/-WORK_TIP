@@ -8,6 +8,7 @@
 * [expect number by two](#Expect_Number_By_Two)
 * [remove repeat value](#Remove_Repeat_Value)
 * [left right change](#Left_Right_Value)
+* [to Thousands](#toThousands)
 
 
 # Source Code
@@ -85,8 +86,7 @@ var x = 1,
 x = _ref[1];
 y = _ref[0];
 
-console.log(x); // 2
-console.log(y); // 1
+console.log({x, y}) // 2, 1
 ```
 
 ```js
@@ -96,6 +96,26 @@ let x = 1,
 
 [y, x] = [x, y];
 
-console.log(x); // 2
-console.log(y); // 1
+console.log({x, y}) // 2, 1
+```
+
+<a target="_blank" href="" name="toThousands" id="toThousands">toThousands</a>
+
+```js
+function toThousands(value) {
+  var num = (value || 0).toString();
+  var result = '';
+
+  while(num.length > 3) {
+    result = ',' + num.slice(-3) + result;
+    num = num.slice(0, num.length - 3);
+    console.log({num})
+  }
+
+  if (num) result = num + result;
+
+  return result;
+}
+
+console.log({toThousands: toThousands(1348957983245)})
 ```
