@@ -13,7 +13,6 @@
 | accelerate | 加快 |
 | key areas | 關鍵領域 |
 | compound | 混合 加重 |
-| 未來，往後一段時間 | 未來，往後一段時間 |
 | eventually | 最終 |
 | estimate | 預計，估計 |
 | rigorously | 嚴格 |
@@ -22,7 +21,7 @@
 | pairwise | 配對 |
 | shift | 轉移 |
 | non-urgent | 非緊急的 |
-| strategies | 策略 |
+| strategy, strategies | 策略 |
 | drastically | 大幅地 |
 | benefit | 效益 |
 | usage | 用法 |
@@ -67,7 +66,8 @@ The next two sections present two heuristics that can help
 
 an inevitable lesson learned is that the time and effort expended do not necessarily correlate with the value produced
 activity is not necessarily production
- These tasks only have a weak and indirect connection to creating value 
+
+These tasks only have a weak and indirect connection to creating value 
 
 what matters is how much value you’ve created. at value is measured in terms of products shipped 
 
@@ -84,3 +84,21 @@ The number of projects that you can work on simultaneously varies from person to
 Sometimes, what hinders focus isn’t a lack of contiguous time or too much context switching. Instead, many people do not have sufficient motivation to summon the activation energy required to start a difficult task.
 
 specify how many rows and columns we need 
+
+
+
+prioritize
+regularly
+mental
+energy
+treat
+long-term
+increase
+investment
+cognitive
+significantly
+
+accelerate
+
+key areas
+compound
