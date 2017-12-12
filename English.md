@@ -37,6 +37,8 @@
 | sufficient | 足夠的 |
 | motivation | 積極性 |
 | realize | 實現 |
+| specify | 特別指出 |
+| fraction | 分數 |
  
 drastically reduce errors
 
@@ -81,3 +83,4 @@ The number of projects that you can work on simultaneously varies from person to
 
 Sometimes, what hinders focus isn’t a lack of contiguous time or too much context switching. Instead, many people do not have sufficient motivation to summon the activation energy required to start a difficult task.
 
+specify how many rows and columns we need 
