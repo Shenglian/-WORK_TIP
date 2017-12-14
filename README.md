@@ -506,3 +506,7 @@ end repeat
 
 # Opensearch 
 * [Opensearch](http://www.wemlion.com/post/opensearch/)
+
+# Robots.txt
+
+* [[SEO優化] 解決Googlebot 無法存取網站上的CSS和JS檔案](https://sofree.cc/seo-googlebot-css-js-robots/)
