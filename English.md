@@ -38,6 +38,7 @@
 | realize | 實現 |
 | specify | 特別指出 |
 | fraction | 分數 |
+| inverted | 反向的 |
  
 drastically reduce errors
 
@@ -86,19 +87,68 @@ Sometimes, what hinders focus isn’t a lack of contiguous time or too much cont
 specify how many rows and columns we need 
 
 
+> used to
+```
+用來表示過去經常做的行為，但現在不在發生了
+使用方法： used to + V (動詞原型)
+其中的 to 是不定詞，而不是介係詞，所以後面只能接動詞原型。
 
-prioritize
-regularly
-mental
-energy
-treat
-long-term
-increase
-investment
-cognitive
-significantly
+【肯定句】He used to smoke.  他過去常抽菸。
+【否定句】1. 直接在 used 後面加上 not, He used not to smoke.
+【否定句】2. 使用助動詞 didn’t，這種用法就是把 used 當成動詞看待，所以變成否定句要用助動詞, He didn’t use to smoke.
+【一般疑問句】把 did 放在句首 Did he use to smoke?
+【反問疑問句】He used to smoke, didn’t he?
+```
 
-accelerate
+> be used to
+```
+【第一種用法】
+描述物品被用來做某件事情。
+使用方法：物 + be used to + V (動詞原型)
+這裡的 used 是 use 的被動語態，而 to 是不定詞，後面要加動詞原型。
+e.g., Tom is used to noise.  湯姆習慣於噪音。
 
-key areas
-compound
+【第二種用法】
+指人習慣於某樣東西或某件事。
+使用方法：人 + be used to + Ving (動名詞) / N (名詞)
+這裡的 to 是介係詞，所以後面要加動名詞或名詞。
+e.g., Tom is used to living in a noisy street.  湯姆習慣居住於嘈雜的街道。
+```
+
+> get used to
+```
+表示從「不習慣」到「習慣」的過程，意思是變得習慣於、開始習慣於某件事或物。
+使用方法：人 + get used to + Ving (動名詞) / N (名詞)
+
+e.g., Since Tom moved to that street, he has gotten used to noise.        自從湯姆搬到那條街道，他已經變得習慣於噪音。
+e.g., Tom wasn’t used to noise. It took him some time to get used to it.  湯姆之前不習慣於噪音環境，他花了點時間才開始習慣。
+```
+
+> Lady: no, thank you. I'd like to drive my car to school alone.
+我想開我的車上學
+(婉轉 已經習慣有禮貌的說話方式, 不爽時也用禮貌性口氣)
+
+> Girl: no, thanks. I wanna drive my car to school alone.
+我想開我的車上學
+(非常直接) 
+
+
+> Gonna 將要
+Gonna 就是 Going to
+
+I’m gonna go home. 我要回家了
+I’m going to go home. (當然不會有人這樣說)
+
+> Wanna 想要
+Wanna 就是Want to 想要
+
+所以像辣妹合唱團的《Wanna be》歌詞中：
+If you wanna be my lover, you have got to give.
+如果想當我情人，你要懂得付出。
+
+> Gotta 必須
+Gotta就是 (I’ve) got to
+
+I gotta go.
+
+我得走了
