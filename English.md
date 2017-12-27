@@ -3,6 +3,7 @@
 | Prioritize |  |
 | Regularly |  |
 | mental | 心裡的 |
+| mention | 提起 |
 | energy | 能量 |
 | treat | 看待 對待 |
 | long-term | 長期的 |
