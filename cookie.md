@@ -1,6 +1,6 @@
 # Cookie
 
-| Name | Value | Domain | Path |
+| Name | Value | Domain |
 | ------ | ------ | ------ |
 | cookie 的名稱 | cookie 的值 | 可以訪問此 cookie 的域名，通過 `setDomain()` 設置 |
 
