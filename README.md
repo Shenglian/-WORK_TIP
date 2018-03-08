@@ -345,11 +345,11 @@ function response(data) {
 * [纯 CSS 实现自适应正方形](https://idiotwu.me/css-responsive-square/)
 
 ### Cursor
-
 * [Cursor Style](https://css-tricks.com/almanac/properties/c/cursor/)
 
 ### Layout
 * [CSS Grid VS Flexbox: A Practical Comparison](http://tutorialzine.com/2017/03/css-grid-vs-flexbox/)
+
 #### Grid
 * [Grid Garden is a game for learning CSS grid layout](http://cssgridgarden.com/)
 * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/?utm_campaign=CodeTengu&utm_medium=email&utm_source=CodeTengu_99)
@@ -363,6 +363,9 @@ function response(data) {
 
 ### css variables
 * [CSS 变量教程](http://www.ruanyifeng.com/blog/2017/05/css-variables.html)
+
+### css bugs
+* [CSS keylogger：攻擊與防禦](https://blog.techbridge.cc/2018/03/02/css-key-logger/)
 
 ### SVG
 * [A Guide to SVG Animations (SMIL)](https://css-tricks.com/guide-svg-animations-smil/)
@@ -382,6 +385,11 @@ function response(data) {
 
 1. [CommonsChunkPlugin](https://medium.com/webpack/webpack-bits-getting-the-most-out-of-the-commonschunkplugin-ab389e5f318)
 2. [HTML-WEBPACK-TEMPLATE 參數設定](https://goo.gl/xwcY6t)
+3. [看清楚真正的 Webpack 插件](https://zoumiaojiang.com/article/what-is-real-webpack-plugin/)
+
+## Prettier
+
+* [Prettier](https://prettier.io/)
 
 ## Git
 
@@ -510,3 +518,7 @@ end repeat
 # Robots.txt
 
 * [[SEO優化] 解決Googlebot 無法存取網站上的CSS和JS檔案](https://sofree.cc/seo-googlebot-css-js-robots/)
+
+## Android 
+
+* [用 ConstraintLayout 解決鍵盤擋住輸入框及按鈕](https://goo.gl/rGkeoQ)
