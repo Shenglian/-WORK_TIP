@@ -1,6 +1,7 @@
 # work-tip
 工作上小技巧
 
+
 ## 需要做筆記
 * [JavaScript 疲劳终极指南：我们行业的真相](http://www.zcfy.cc/article/3914)
 * [CSS技巧之'text-justify'](http://www.zcfy.cc/article/text-justify-css-tricks-3946.html?t=new)
@@ -19,6 +20,9 @@
 4. [算法：什么是 B 树？](http://blog.jobbole.com/111757/)
 
 ## Javascript 
+
+### ECMAScript 
+  * [ECMA-262-3 in detail](http://dmitrysoshnikov.com/)
 
 ### Basic
 
@@ -93,6 +97,7 @@
 
   ```
   > Prototype
+  * [原型基礎物件導向](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
   * [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
   * [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
   * [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
