@@ -18,8 +18,8 @@
 - 所有 queue 都 clean，結束。
 
 ex: 
-```
 `input:`
+```js
 console.log('start - 1'); 
 
 setTimeout(function(){ 
@@ -62,9 +62,9 @@ Promise.resolve().then(function() {
 }).then(function(){
   console.log('Promise2-2');
 });
-
+```
 `output`: 
-
+```js
 start - 1
 start - 2
 Promise1-1
@@ -79,9 +79,9 @@ Promise1-3
 Promise1-1000
 Promise2-1000
 額外題
-
+```
 `過程：`
-
+```js
 在 script(marcotask)
 
 console.log -> start - 1, start - 2
