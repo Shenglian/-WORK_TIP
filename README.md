@@ -142,19 +142,6 @@
   o.todoList();
   o.doSomeThingLater();
 ```
-    
-
-  > Event-Loop
-    ```
-    macrotask（tasks）: script(整体代码), setTimeout, setInterval, setImmediate, I/O, UI rendering
-    microtask（jobs）: process.nextTick, Promise, Object.observe(已废弃), MutationObserver(html5新特性)'
-
-    microtasks 會先執行完，才會去執行 marcotasks 
-    ```
-  * [前端基础进阶（十二）：深入核心，详解事件循环机制](http://www.jianshu.com/p/12b9f73c5a4f#)
-  * *[Philip Roberts: What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ) - JavaScript programmers like to use words like, “event-loop”, “non-blocking”, “callback”, “asynchronous”, “single-threaded” and “concurrency”.
-  * [浏览器渲染详细过程：重绘、重排和 composite 只是冰山一角](https://juejin.im/entry/590801780ce46300617c89b8)
-  * [JavaScript中的microtask与task](https://flyyang.github.io/2017/03/07/javascript%E4%B8%AD%E7%9A%84microtask%E4%B8%8Etask/)
 
   > Other 
   * By value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
