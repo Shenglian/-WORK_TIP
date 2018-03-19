@@ -10,12 +10,12 @@
 
 首先, 全部代碼(script) 算是一個 `macrotask`.
 
-第一步：瀏覽器先執行一個 macrotask -> 全部代碼(script)，並且掛起 tasks queue and jobs queue
-第二步：執行 micro -> 將所有的 mircotask queue 取出
-第三步：執行 macro -> 將所有的 marcotask queue 取出
-第四步：看 mirco 裡面有沒有 queue 或是 看 marco 裡面有沒有 queue
+- 第一步：瀏覽器先執行一個 macrotask -> 全部代碼(script)，並且掛起 tasks queue and jobs queue
+- 第二步：執行 micro -> 將所有的 mircotask queue 取出
+- 第三步：執行 macro -> 將所有的 marcotask queue 取出
+- 第四步：看 mirco 裡面有沒有 queue 或是 看 marco 裡面有沒有 queue
 
-所有 queue 都 clean，結束。
+- 所有 queue 都 clean，結束。
 
 ex: 
 ```
