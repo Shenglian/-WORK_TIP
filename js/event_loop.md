@@ -91,3 +91,5 @@ insert marcotask: 0-1, 1000, 0-2, 2000, Promise-1000, Promise-2000
 之後就繼續反覆查看 mircotask and marcotask queue 裡面有沒有東西
 ```
 
+資料來源：
+1. [Promise的队列与setTimeout的队列有何关联？](https://www.zhihu.com/question/36972010)
