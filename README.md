@@ -369,6 +369,21 @@ function response(data) {
 ### SVG
 * [A Guide to SVG Animations (SMIL)](https://css-tricks.com/guide-svg-animations-smil/)
 
+### RVM
+* [How can I remove RVM (Ruby Version Manager) from my system?
+](https://stackoverflow.com/questions/3558656/how-can-i-remove-rvm-ruby-version-manager-from-my-system)
+
+### Laravel
+* [Laravel](https://tony915.gitbooks.io/laravel4/content/install/install_composer.html)
+
+### zsh
+* zsh环境变量失效问题 - 編輯~/.zshrc文件，在開頭添加一下配置
+```
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+source $HOME/.bashrc
+source $HOME/.bash_profile
+```
+
 > Tip
 
 1. [css-protips](https://github.com/AllThingsSmitty/css-protips)
