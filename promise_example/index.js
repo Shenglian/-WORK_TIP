@@ -9,6 +9,12 @@ class Example {
     this.storyDiv.appendChild(div);
   }
 
+  addTextToPage(text) {
+    let p = document.createElement('p');
+    p.textContent = text;
+    this.storyDiv.appendChild(p);
+  }
+
   // https://googlesamples.github.io/web-fundamentals/fundamentals/primers/story.json
   // https://shenglian.github.io/-WORK_TIP/promise_example/story.json
   get(url) {
@@ -33,7 +39,6 @@ class Example {
   }
 
   getJSON(url) {
-    console.log('this', this);
     return this.get(url).then(JSON.parse)
   }
 }
@@ -43,6 +48,18 @@ const _Example = new Example();
 _Example.getJSON('https://shenglian.github.io/-WORK_TIP/promise_example/story.json')
   .then(res => {
     _Example.addHtmlToPage(res.heading);
-    // console.log('story.chapterUrls.map(getJSON)', );
-    return res.chapterUrls.map(_Example.getJSON.bind(_Example))
+
+    return res.chapterUrls.map(_Example.getJSON.bind(_Example)).reduce((chain, chapterPromise) => {
+      return chain.then(function() {
+        return chapterPromise;
+      }).then(function(chapter) {
+        _Example.addHtmlToPage(chapter.html);
+      })
+    }, Promise.resolve());
+  })
+  .then(() => {
+    _Example.addTextToPage(' Well Done! ');
+  })
+  .then(() => {
+    document.querySelector('.spinner').style.display = 'none';
   })
