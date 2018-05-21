@@ -1,10 +1,10 @@
 {
   "heading": "<h1>A story about something</h1>",
   "chapterUrls": [
-    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter-1.json",
-    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter-2.json",
-    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter-3.json",
-    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter-4.json",
-    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter-5.json"
+    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter1.json",
+    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter2.json",
+    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter3.json",
+    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter4.json",
+    "https://shenglian.github.io/-WORK_TIP/promise_example/chapter5.json"
   ]
 }
