@@ -22,35 +22,38 @@
 ## Javascript 
 
 ### ECMAScript 
-	* [ECMA-262-3 in detail](http://dmitrysoshnikov.com/)
+* [ECMA-262-3 in detail](http://dmitrysoshnikov.com/)
+
 ### ES6 example
-	* [es6-features](http://es6-features.org/#IteratorForOfOperator)
+* [es6-features](http://es6-features.org/#IteratorForOfOperator)
+
 ### 從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理
-	* [從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理](http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html)
+* [從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理](http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html)
 
 ### Basic
-	* [Tip](https://github.com/Shenglian/work-tip/blob/master/js/tip.md) 
-	* [declare var, let, const and fn](https://github.com/Shenglian/work-tip/blob/master/js/declare_var_let_const_fn.md)
+* [Tip](https://github.com/Shenglian/work-tip/blob/master/js/tip.md) 
+* [declare var, let, const and fn](https://github.com/Shenglian/work-tip/blob/master/js/declare_var_let_const_fn.md)
+
 #### Prototype
-	* [原型基礎物件導向](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
-	* [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
-	* [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
-	* [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
-	* [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
+* [原型基礎物件導向](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
+* [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
+* [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
+* [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
+* [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
 
 #### Scope
-	* [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
+* [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
 
 #### Closures
 
 #### This (指向，及目標方向，所對的方位)
-	* 普通調用 - (誰調用，就指向誰)
-	* apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
-	* arrow function this === current function
-	* normal function this === window
-	* (This in JavaScript)[https://zellwk.com/blog/this/]
-		* ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
-		* ps2. simple function this 都是指向 windows
+* 普通調用 - (誰調用，就指向誰)
+* apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
+* arrow function this === current function
+* normal function this === window
+* (This in JavaScript)[https://zellwk.com/blog/this/]
+	ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
+	ps2. simple function this 都是指向 windows
 
 ```js
 var o = {
