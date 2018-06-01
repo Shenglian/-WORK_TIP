@@ -111,3 +111,55 @@ function response(data) {
   }
 }
 ```
+
+####  block
+```js
+{
+	function foo () { return 1 }
+	foo() === 1
+	{
+		function foo () { return 2 }
+		foo() === 2
+	}
+	foo() === 1
+}
+```
+
+####  
+```js
+function quux(){
+  return 'quux';
+}
+
+let obj = {
+  foo: "bar",
+  [ "baz" + quux() ]: 42
+}
+
+console.log({obj});
+```
+
+#### getter setter
+```js
+class Rectangle {
+  constructor (width, height) {
+    this._width  = width
+    this._height = height
+  }
+  set d_width (width)  { this._width = width               }
+  get d_width ()       { return this._width * 2            }
+
+  set width   (width)  { this._width = width               }
+  get width   ()       { return this._width                }
+
+  set height  (height) { this._height = height             }
+  get height  ()       { return this._height               }
+
+  get area    ()       { return this._width * this._height }
+}
+
+var r = new Rectangle(50, 20)
+r.area === 1000
+
+console.log('r.d_width: ', r.d_width);
+```
