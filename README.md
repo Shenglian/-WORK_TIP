@@ -13,7 +13,7 @@
 * [JavaScript核心概念归纳整理](https://mp.weixin.qq.com/s/I7A1iC8Et6uOGZ234DsTlA)
 
 ## 演算法
-* [演算法 - 每日練習](https://github.com/Shenglian/work-tip/blob/master/js/algorithm.md)
+0. [演算法 - 每日練習](https://github.com/Shenglian/work-tip/blob/master/js/algorithm.md)
 1. [演算法](https://sort.hust.cc/1.bubbleSort.html)
 2. [算法：找出缺失的整数](http://blog.jobbole.com/106521/)
 3. [算法：如何判断链表有环？](http://blog.jobbole.com/106227/#comment-158642)
@@ -22,150 +22,82 @@
 ## Javascript 
 
 ### ECMAScript 
-  * [ECMA-262-3 in detail](http://dmitrysoshnikov.com/)
-
+	* [ECMA-262-3 in detail](http://dmitrysoshnikov.com/)
+### ES6 example
+	* [es6-features](http://es6-features.org/#IteratorForOfOperator)
 ### 從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理
-  - [從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理](http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html)
+	* [從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理](http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html)
 
 ### Basic
+	* [Tip](https://github.com/Shenglian/work-tip/blob/master/js/tip.md) 
+	* [declare var, let, const and fn](https://github.com/Shenglian/work-tip/blob/master/js/declare_var_let_const_fn.md)
+#### Prototype
+	* [原型基礎物件導向](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
+	* [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
+	* [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
+	* [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
+	* [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
 
-  > var, fn, let, const [出處](https://zhuanlan.zhihu.com/p/28140450)
+#### Scope
+	* [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
 
-  In JavaScript, all binding declarations are instantiated when control flow enters the scope in which they appear. Legacy var and function declarations allow access to those bindings before the actual declaration, with a "value" of undefined. That legacy behavior is known as "hoisting". let and const binding declarations are also instantiated when control flow enters the scope in which they appear, with access prevented until the actual declaration is reached; this is called the Temporal Dead Zone. The TDZ exists to prevent the sort of bugs that legacy hoisting can create. -- [來源](https://gist.github.com/rwaldron/ca35924d59ddc60a6aa165e1e4a3acda)
-  
-  變數三階段： created, initialize, assign 
+#### Closures
 
-  > `var`
-  有包含這三階段，只有 `created`, `initialize` 被 `hoisting` 。 `initialize` 時，為 undefined。
-  > `fn` 
-  有包含這三階段，並且都被 `hoisting` 。
-  > `let`, `const` 
-  只有在 `created` 階段才有被 `hosting`，在沒有任何的 `initialize` 的情形發生，強制讀取 `let` or `const` 只是會發生reference error : let x is not defined
-  > `const` 
-  沒有 assign （很合理）
-
-  - 結論：`let` and `const` 這些 keyword 會被這樣設計的原因。可能是要降低記憶體吧（其中之一）。當需要用到的時候，再去 `initialize` ，然後使用它們。
-
-
-  > for-in
-  ```js
-  for (let index in values) {
-    console.log('index =>', index);
-    console.log(`${index} =>`, values[index]);
-  }
-  ```
-
-  > Decimal base exponents
-  ```js
-  1e0 === 1;
-  1e1 === 10;
-  1e2 === 100;
-  1e3 === 1000;
-  ```
-
-  > Implicit Return Shorthand
-  ```js
-  function calcCircumfunction(diameter) {
-    return Math.PI * diameter;
-  }
-
-  |||
-
-  calcCircumfunction = diameter => (
-    Math.PI * diameter;
-  )
-  ```
-
-  > Mandatory Parameter Shorthand
-  ```js
-  mandatory = () => {
-    throw new Error('Missing parameter');
-  }
-
-  foo = (bar = mandatory()) => {
-    return bar;
-  }
-  ```
-
-  > Operator Shorthand
-  ```js
-  if (x) {
-    y();
-  }
-
-  |||
-
-  // Shorthand:
-  x && y();
-
-  ```
-  > Prototype
-  * [原型基礎物件導向](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
-  * [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
-  * [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
-  * [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
-  * [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
-
-  > Scope
-  * [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
-
-  > Closures
-
-  > This (指向，及目標方向，所對的方位)
-  * 普通調用 - (誰調用，就指向誰)
-  * apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
-  * arrow function this === current function
-  * normal function this === window
-  * (This in JavaScript)[https://zellwk.com/blog/this/]
-    ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
-    ps2. simple function this 都是指向 windows
+#### This (指向，及目標方向，所對的方位)
+	* 普通調用 - (誰調用，就指向誰)
+	* apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
+	* arrow function this === current function
+	* normal function this === window
+	* (This in JavaScript)[https://zellwk.com/blog/this/]
+		* ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
+		* ps2. simple function this 都是指向 windows
 
 ```js
-  var o = {
+var o = {
     doSomeThingLater() {
-      console.log('1. where is this? ', this);
-      setTimeout(function(){
-        console.log('2. where is this? ', this);
-        try {
-          this.speakLeet();
-        } catch(error) {
-          console.log('error', error);
-        }          
-      }, 0)
+        console.log('1. where is this? ', this);
+        setTimeout(function(){
+            console.log('2. where is this? ', this);
+            try {
+                this.speakLeet();
+            } catch(error) {
+                console.log('error', error);
+            }
+        }, 0)
     },
     speakLeet() {
-      console.log('Here is speakLeet function');
+        console.log('Here is speakLeet function');
     },
     todoList() {
-      console.log('3. where is this? ', this);
-      this.speakLeet();  
+        console.log('3. where is this? ', this);
+        this.speakLeet();  
     },
-  }
+}
 
-  o.todoList();
-  o.doSomeThingLater();
+o.todoList();
+o.doSomeThingLater();
 ```
 
-  > Other 
+#### Other 
   * By value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
   * Javascript分号，加还是不加？[前往](https://segmentfault.com/a/1190000000437434)
-  
-  ```js
-    s = function(x){return x}
-    (1 + 2).toString()
-    // parse to 
-    s = function(x){return x}(1 + 2).toString()
-    // so we can to 
-    s = function(x){return x}
-    ;(1 + 2).toString()
-    // we often to see 
-    ;(function(){
-        // ...
-    })();
-    // 在 function 的前面加了一个分号，目的就是为了防止整个函数的返回值作为参数送入上一条语句之中。
-  ```
-  
-> Js Api
+
+```js
+s = function(x){return x}
+(1 + 2).toString()
+// parse to 
+s = function(x){return x}(1 + 2).toString()
+// so we can to 
+s = function(x){return x}
+;(1 + 2).toString()
+// we often to see 
+;(function(){
+// ...
+})();
+// 在 function 的前面加了一个分号，目的就是为了防止整个函数的返回值作为参数送入上一条语句之中。
+```
+
+#### Js Api
   * Date [前往](https://github.com/Shenglian/work-tip/blob/master/js_api/date.md)
 
   * Fullscreen
@@ -178,125 +110,40 @@
 
   * [常用API合集](https://www.kancloud.cn/dennis/tgjavascript/241852)
 
-> Vanilla
+#### Vanilla
 * [The Basics of DOM Manipulation in Vanilla JavaScript (No jQuery)](https://goo.gl/Pd9ym7)
 * [不可错过的javascript迷你库](http://yanhaijing.com/javascript/2015/12/29/mini-js-lib/)
 
-```js
-
-// 同時監聽許多元素時，透過 event.target 來取得是哪個元素觸發的。
-Array.from(allElements).forEach(element => {
-  element.addEventListener('change', function (event) {
-    console.log(event.target.value)
-  })
-})
-```
-
-```js
-// animate window.requestAnimationFrame()
-const start = window.performance.now()
-const duration = 2000
-
-window.requestAnimationFrame(function fadeIn (now) {
-  const progress = now - start
-  oneElement.style.opacity = progress / duration
-
-  if (progress < duration) {
-    window.requestAnimationFrame(fadeIn)
-  }
-}
-```
-
-```js
-
-// http://stackoverflow.com/questions/7452341/what-does-void-0-mean
-// 原本 undefined 是可以被 overwirten ，但是 ES5 之後就不行了
-
-void 0; // undefied;
-
-```
-
-> Promise
+#### Promise
 
 * [透彻掌握 Promise 的使用，读这篇就够了](https://juejin.im/entry/58e1d720ac502e006c0e0196)
 * [從Promise開始的JavaScript異步生活](https://eyesofkids.gitbooks.io/javascript-start-es6-promise/content/)
 * [八段代码彻底掌握Promise](https://goo.gl/7dnJR5) 
 
-> Async Await
+#### Async Await
 
-1. [[Javascript] ES7 Async Await 聖經](https://medium.com/@peterchang_82818/javascript-es7-async-await-%E6%95%99%E5%AD%B8-703473854f29-tutorial-example-703473854f29)
+1. [[Javascript ES7 Async Await 聖經](https://medium.com/@peterchang_82818/javascript-es7-async-await-%E6%95%99%E5%AD%B8-703473854f29-tutorial-example-703473854f29)
 2. [JavaScript 好用的 async 異步函數！ ](http://fred-zone.blogspot.tw/2016/07/javascript-async.html)
 3. [JavaScript async/await 的奇淫技巧 ](http://fred-zone.blogspot.tw/2017/04/javascript-asyncawait.html)
 4. [Callback Promise Generator Async-Await 和异常处理的演进](http://www.jianshu.com/p/78dfb38ac3d7)
 
-> 非同步
-
+#### 非同步
 * [非同步](https://cythilya.github.io/2017/06/27/asynchrony-now-and-later/)
-
-```js
-// 分段處理數據
-function get(url) {
-  return new Promise((resolve, reject) => {
-    const req = new XMLHttpRequest();
-    req.open('GET', url);
-    req.onload = () => req.status === 200 ? resolve(req.response) : reject(Error(req.statusText));
-    req.onerror = (e) => reject(Error(`Network Error: ${e}`));
-    req.send();
-  });
-}
-
-get('https://gist.githubusercontent.com/Shenglian/57b157cd8c9c52fa9af9fcdf17becea0/raw/9cb237c9a332d19caab674354c831418126fd8b7/person.json')
-.then((data) => {
-    var result = JSON.parse(data);
-    response(result);
-})
-.catch((error) => {
-    console.log('error', error);
-});
-
-var res = [];
-
-function response(data) {
-  
-  var chunk = data.splice(0, 100);
-  res = res.concat(chunk.map(function(p){
-    return p.age;
-  }));
-
-  console.log(res);
-
-  if (data.length > 0) {
-    setTimeout(function(){
-      response(data);
-      
-    }, 0);
-  }
-}
-
-```
-
-> 面試
-
-1. [80% 应聘者都不及格的 JS 面试题](https://juejin.im/post/58cf180b0ce4630057d6727c)
-
-> Variable
-
-> Function
 
 1. [剩余参数](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Rest_parameters)
 2. [扩展语句](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
-> String 
+#### String 
 
 1. [replace](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 2. [search](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
 
-## Angularjs
+####  Angularjs
 
 1. directive [區別 $eval, $parse 和 $observe](https://github.com/Shenglian/work-tip/blob/master/angularjs/directive.md)
   * 參考 [angular-infinite-scroll](https://github.com/sparkalow/angular-infinite-scroll/blob/master/src/infinite-scroll.js)
-  
-## Vue
+
+####  Vue
 
 * VueCheatSheet
   * [vuex-cheatsheet](https://vuejs-tips.github.io/vuex-cheatsheet/#)
@@ -313,17 +160,15 @@ function response(data) {
 
 
 * [Vuejs-tips](https://medium.com/vuejs-tips)
-  * [Always declare your data before use it](https://goo.gl/duZYY6)
-  * [Reactive dynamic properties - use $set](https://goo.gl/2RpNXE)
-  *  [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
-  * [Deleting Array index in Vue.js - this.
-  > Other 
-  * [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
-  
-* [Vue2.0 原始碼簡析：](https://github.com/Shenglian/work-tip/blob/master/vuejs/vue.m
+	* [Always declare your data before use it](https://goo.gl/duZYY6)
+	* [Reactive dynamic properties - use $set](https://goo.gl/2RpNXE)
+	* [vue中的$set](http://www.jianshu.com/p/358c1974d9a5)
+	* [Vue2.0 源码阅读：模板渲染](http://zhouweicsu.github.io/blog/2017/04/21/vue-2-0-template/)
+	* [Vue2.0 原始碼簡析：](https://github.com/Shenglian/work-tip/blob/master/vuejs/vue.md)
+	* [delete index](https://goo.gl/2ffvqE)
 
-> Js Api
-  delete](https://goo.gl/2ffvqE)
+####  Js Api
+
 * [个迷你vue库，虽然小但功能全面，可以作为想了解vue背后思想以及想学习vue源码而又不知如何入手的入门学习资料。](https://github.com/xiaofuzi/deep-in-vue/blob/master/src/the-super-tiny-vue.js)
 
 * [入門 vuex](https://github.com/Shenglian/work-tip/blob/master/vuejs/vuex.md)
@@ -412,7 +257,7 @@ source $HOME/.bash_profile
 
 ## mobile 坑
 
-1. [[移动端]移动端上遇到的各种坑与相对解决方案](http://blog.csdn.net/BaiHuaXiu123/article/details/68925120)
+1. [移动端上遇到的各种坑与相对解决方案](http://blog.csdn.net/BaiHuaXiu123/article/details/68925120)
 2. [腾讯2016公司代码报告总结](http://www.jianshu.com/p/40a41bdbe054) - 主要看 video 播放的部分
 
 ## ESLint 
@@ -508,7 +353,7 @@ end repeat
 
 # npm [additional shorthand](https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties)
 
-* npm i --save pkg     => npm i -S pkg
+* npm i --save pkg   => npm i -S pkg
 * npm i --save-dev pkg => npm i -D pkg
 * npm test             => npm t
 * npm ls --depth 0 (list installed packages)
@@ -530,10 +375,20 @@ end repeat
 * [Opensearch](http://www.wemlion.com/post/opensearch/)
 
 # Robots.txt
-* [[SEO優化] 解決Googlebot 無法存取網站上的CSS和JS檔案](https://sofree.cc/seo-googlebot-css-js-robots/)
+* [[SEO優化 解決Googlebot 無法存取網站上的CSS和JS檔案](https://sofree.cc/seo-googlebot-css-js-robots/)
 
-## Android 
+# Android 
 * [用 ConstraintLayout 解決鍵盤擋住輸入框及按鈕](https://goo.gl/rGkeoQ)
 
-## MessageChannel
+# MessageChannel
 * [理解 MessageChannel](https://github.com/luokuning/blogs/issues/6)
+
+## Koa
+* [koa-router](https://github.com/alexmingoia/koa-router#module_koa-router--Router+routes)
+
+## postgresql
+* [官方文件](https://node-postgres.com/)
+* [How to use PostgreSQL in Nodejs](http://www.jitendrazaa.com/blog/webtech/how-to-use-postgresql-in-nodejs/)
+
+## 面試
+* [80% 应聘者都不及格的 JS 面试题](https://juejin.im/post/58cf180b0ce4630057d6727c)
