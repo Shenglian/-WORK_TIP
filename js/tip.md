@@ -163,3 +163,11 @@ r.area === 1000
 
 console.log('r.d_width: ', r.d_width);
 ```
+#### write fs.writeFile
+
+```js
+fs.writeFile('issues.json', JSON.stringify(response.data), function (err) {
+        err ? console.log(err) : console.log('Write operation complete.');
+      });
+```
+
