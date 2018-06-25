@@ -27,7 +27,7 @@
     console.log('a => ', a); // { foo: 999 }
     console.log('b => ', b); // { greeting: 222 }
   ```
-  
+
 參考資料 1：[[JavaScript] by value V.S by reference的行為](http://myohmy10420-blog.logdown.com/posts/1752866)
 參考資料 2：[談談JavaScript中by reference和by value的重要觀念](https://pjchender.blogspot.tw/2016/03/javascriptby-referenceby-value.html)
 
@@ -70,5 +70,31 @@ function sameVariable(hundred) {
 console.log('sameVariable: ', sameVariable(hundred));
 console.log('hundred: ', hundred);
 ```
+	> function 內部會聲明一次 pamarters 為內部變數
+
 參考資料：[Explaining Value vs. Reference in Javascript](
 https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0)
+
+# === || ==
+
+	>if comparision object, will check reference first.
+
+> When ther equality operators, == and === , are used on reference-type variables, they check the reference. If the variables contain a reference to the same item, the comparision will result in true.
+
+```js
+// assign same refenerce
+var arrRef = ['hi'];
+var arrRef2 = arrRef;
+console.log(arrRef === arrRef2) // true
+
+// distinct refenerce
+var arr1 = ['hi'];
+var arr2 = ['hi'];
+console.log(arr1 === arr2) // false
+
+// array convert to string
+var str1 = ['h1'].toString();
+var str2 = ['h1'].toString();
+console.log(str1 === str2) // true
+```
+
