@@ -30,19 +30,12 @@
 ### 從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理
 * [從瀏覽器多進程到JS單線程，JS運行機制最全面的一次梳理](http://www.dailichun.com/2018/01/21/js_singlethread_eventloop.html)
 
-### Basic
-* [Tip](https://github.com/Shenglian/work-tip/blob/master/js/tip.md) 
-* [declare var, let, const and fn](https://github.com/Shenglian/work-tip/blob/master/js/declare_var_let_const_fn.md)
-
 #### Prototype
 * [原型基礎物件導向](https://eyesofkids.gitbooks.io/javascript-start-from-es6/content/part4/prototype.html)
 * [Javascript 原型中的哲学思想](https://goo.gl/nRNrke) 
 * [JavaScript 的 constructor 、 prototype 和 __proto__ 屬性](https://github.com/Shenglian/JavaScript-notes-from-Xitun/blob/master/Javascript-prototype.md)
 * [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
 * [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
-
-#### Scope
-* [講解 javascript Scope](https://github.com/Shenglian/work-tip/blob/master/scope.md)
 
 #### Closures
 
