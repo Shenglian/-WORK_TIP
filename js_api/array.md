@@ -3,18 +3,19 @@
 
 > slice - [question](https://stackoverflow.com/questions/8495687/split-array-into-chunks)
 ```js
-  //  slice chunk
-  function chunk(size, total) {
+//  slice chunk
+function chunk(size, total) {
     const newArr = [];
     for(let i = 0; i < total.length; i+=size) {
-      newArr.push(total.slice(i, i + size));
+        newArr.push(total.slice(i, i + size));
     }
     return newArr;
-  }
-  // clone array
-  function clone(arr) {
-    return arr.slice(0);
-  }
+}
+
+// clone array
+function clone(arr) {
+	return arr.slice(0);
+}
 ```
 
 > splice - [source](https://davidwalsh.name/array-insert-index)

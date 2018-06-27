@@ -1,10 +1,6 @@
-## JavaScript 引擎基础：Shapes 和 Inline Caches
+# Mathematics-of-animation
 
-[JavaScript 引擎基础：Shapes 和 Inline Caches](https://hijiangtao.github.io/2018/06/17/Shapes-ICs/)
+[mathematics-of-animation slide](https://winkervsbecks.github.io/mathematics-of-animation/#/)
 
->  心得：會有剛好這麼多相同的 shapes 嗎 :<
-
-
-
-# other
+[Mathematics-of-animation video](https://www.youtube.com/watch?v=o59ioaZ6x3g)
 
