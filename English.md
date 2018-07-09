@@ -1,72 +1,34 @@
-| 單字        | 解釋              | 單字         | 解釋      | 單字     | 解釋           |
-| ----------- | ----------------- | ------------ | --------- | -------- | -------------- |
-| assemble    | 裝配/組合/收集    | volcano      | 火山      | indicate | 指示           |
-| sector      | 扇形              | successive   | 連續的    | faction  | 派系           |
-| corresponed | 符合/一致         | feast        | 宴會      | leftover | 剩餘的         |
-| troop       | 軍隊              | domination   | 控制/統治 | leftmost | 最左邊         |
-| sacrifice   | 犧牲              | recruit      | 招僱      | conquer  | 征服           |
-| adjacent    | 鄰近的            | clan         | 氏族      | flop     |                |
-| repetition  |                   | come up with |           | vertical | 垂直的         |
-| a flect of  | 艦隊              | Cruisers     | 巡洋艦    | galaxy   | 星系           |
-| mining      | 礦                | prestige     | 聲望      | deal out | 交易           |
-| patrol(s)   | 巡邏              | fewer        | 少        | at scale | 規模           |
-| clash       |                   | denote       | 表示      | disgram  | 圖表           |
-| Protocol    |                   | upgrade      | 升級      | persist  | 堅持/固執/持續 |
-| internally  | 從內部            | pretend      | 假裝      | alter    | 改變           |
-| distinct    | 清楚的/截然不同的 | mutate       |           | compose  |                |
-|             |                   |              |           |          |                |
-|             |                   |              |           |          |                |
-|             |                   |              |           |          |                |
-|             |                   |              |           |          |                |
-|             |                   |              |           |          |                |
-
-
-
-
-
-
-| 單字 | 解釋 |
-| ------ | ------ |
-| Prioritize |  |
-| Regularly |  |
-| mental | 心裡的 |
-| mention | 提起 |
-| energy | 能量 |
-| treat | 看待 對待 |
-| long-term | 長期的 |
-| increase |  |
-| investments | 投資 |
-| cognitive | 心裡的 |
-| significantly | 顯著 |
-| accelerate | 加快 |
-| key areas | 關鍵領域 |
-| compound | 混合 加重 |
-| eventually | 最終 |
-| estimate | 預計，估計 |
-| rigorously | 嚴格 |
-| determine | 確定 |
-| retrospective | 回顧 |
-| pairwise | 配對 |
-| shift | 轉移 |
-| non-urgent | 非緊急的 |
-| strategy, strategies | 策略 |
-| drastically | 大幅地 |
-| benefit | 效益 |
-| usage | 用法 |
-| tackled | 解決 |
-| effort | 努力 盡力 |
-| expend | 消費 用光 |
-| correlate with | 相關聯 |
-| neglect | 忽略 |
-| contiguous | 連續的 |
-| momentum | 氣勢 |
-| hinder | 阻礙 |
-| sufficient | 足夠的 |
-| motivation | 積極性 |
-| realize | 實現 |
-| specify | 特別指出 |
-| fraction | 分數 |
-| inverted | 反向的 |
+| 單字          | 解釋              | 單字           | 解釋      | 單字           | 解釋                       |
+| ------------- | ----------------- | -------------- | --------- | -------------- | -------------------------- |
+| assemble      | 裝配/組合/收集    | volcano        | 火山      | indicate       | 指示                       |
+| sector        | 扇形              | successive     | 連續的    | faction        | 派系                       |
+| corresponed   | 符合/一致         | feast          | 宴會      | leftover       | 剩餘的                     |
+| troop         | 軍隊              | domination     | 控制/統治 | leftmost       | 最左邊                     |
+| sacrifice     | 犧牲              | recruit        | 招僱      | conquer        | 征服                       |
+| adjacent      | 鄰近的            | clan           | 氏族      | flop           |                            |
+| repetition    |                   | come up with   |           | vertical       | 垂直的                     |
+| a flect of    | 艦隊              | Cruisers       | 巡洋艦    | galaxy         | 星系                       |
+| mining        | 礦                | prestige       | 聲望      | deal out       | 交易                       |
+| patrol(s)     | 巡邏              | fewer          | 少        | at scale       | 規模                       |
+| clash         |                   | denote         | 表示      | disgram        | 圖表                       |
+| Protocol      |                   | upgrade        | 升級      | persist        | 堅持/固執/持續             |
+| internally    | 從內部            | pretend        | 假裝      | alter          | 改變                       |
+| distinct      | 清楚的/截然不同的 | mutate         |           | compose        |                            |
+| utility       |                   | delimiter      |           | procedure      |                            |
+| dire          | 可怕的            | exactly        | 究竟      | geometry       | 幾何                       |
+| distinct      | 不同              | identical      | 相同      | mental         | 心裡的                     |
+| mention       | 提起              | energy         | 能量      | treat          | 看待/對待                  |
+| long-term     | 長期的            | increase       |           | investment     | 投資                       |
+| inverted      | 反向的            | fraction       | 分數      | specify        | 具體指定/詳細指明/明確說明 |
+| realize       | 實現              | motivation     | 積極性    | sufficient     | 足夠的                     |
+| hinder        | 阻礙              | momentum       | 氣勢      | contiguous     | 連續的                     |
+| neglect       | 忽略              | correlate with | 相關聯    | expend         | 消費/用光                  |
+| effort        | 努力/盡力         | tackled        | 解決      | usage          | 用法                       |
+| benefit       | 益處              | drastically    | 大幅地    | strategey(ies) | 策略                       |
+| non-urgent    | 非緊急的          | shift          | 轉移      | pairwise       | 配對                       |
+| retrospective | 回顧              | determine      | 確定      | rigorously     | 嚴格                       |
+| estimate      | 預計/預估         | eventually     | 最終      | compound       | 混合/加重                  |
+| accelerate    | 加快              | significantly  | 顯著      | cognitive      | 心裡的                     |
 
 drastically reduce errors
 
