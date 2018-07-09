@@ -1,3 +1,30 @@
+| 單字        | 解釋              | 單字         | 解釋      | 單字     | 解釋           |
+| ----------- | ----------------- | ------------ | --------- | -------- | -------------- |
+| assemble    | 裝配/組合/收集    | volcano      | 火山      | indicate | 指示           |
+| sector      | 扇形              | successive   | 連續的    | faction  | 派系           |
+| corresponed | 符合/一致         | feast        | 宴會      | leftover | 剩餘的         |
+| troop       | 軍隊              | domination   | 控制/統治 | leftmost | 最左邊         |
+| sacrifice   | 犧牲              | recruit      | 招僱      | conquer  | 征服           |
+| adjacent    | 鄰近的            | clan         | 氏族      | flop     |                |
+| repetition  |                   | come up with |           | vertical | 垂直的         |
+| a flect of  | 艦隊              | Cruisers     | 巡洋艦    | galaxy   | 星系           |
+| mining      | 礦                | prestige     | 聲望      | deal out | 交易           |
+| patrol(s)   | 巡邏              | fewer        | 少        | at scale | 規模           |
+| clash       |                   | denote       | 表示      | disgram  | 圖表           |
+| Protocol    |                   | upgrade      | 升級      | persist  | 堅持/固執/持續 |
+| internally  | 從內部            | pretend      | 假裝      | alter    | 改變           |
+| distinct    | 清楚的/截然不同的 | mutate       |           | compose  |                |
+|             |                   |              |           |          |                |
+|             |                   |              |           |          |                |
+|             |                   |              |           |          |                |
+|             |                   |              |           |          |                |
+|             |                   |              |           |          |                |
+
+
+
+
+
+
 | 單字 | 解釋 |
 | ------ | ------ |
 | Prioritize |  |
@@ -40,7 +67,7 @@
 | specify | 特別指出 |
 | fraction | 分數 |
 | inverted | 反向的 |
- 
+
 drastically reduce errors
 
 Research shows that expanding effort on remembering things reduces our attention
