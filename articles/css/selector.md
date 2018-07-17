@@ -11,7 +11,7 @@ A[attr=value]
 
 A[attr~=value] /* in space separated list */ 
 
- 
+A[attr*=value] /*Selects every element whose attribute value contains the substring */
 
 :checked 
 
