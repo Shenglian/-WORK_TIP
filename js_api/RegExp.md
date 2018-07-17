@@ -17,6 +17,22 @@ it initialises the newly created object.
 
 ## replace
 
+```js
+// Q:
+const str = '-xx____x-x__x-x_-'
+let arr = []
+```
+
+```js
+// A:
+str.replace(/(-)|(x_*)/g, function(match, p1, p2) {
+    p1 ? arr.push({on: true}) : null
+    p2 ? arr.push({on: false}) : null
+})
+```
+
+
+
 ## split
 
 
