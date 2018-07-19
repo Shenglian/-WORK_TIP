@@ -29,6 +29,7 @@
 | retrospective | 回顧              | determine      | 確定      | rigorously     | 嚴格                       |
 | estimate      | 預計/預估         | eventually     | 最終      | compound       | 混合/加重                  |
 | accelerate    | 加快              | significantly  | 顯著      | cognitive      | 心裡的                     |
+| approach      | 靠近/接近/方法    |                |           |                |                            |
 
 drastically reduce errors
 
