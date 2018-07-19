@@ -148,7 +148,7 @@ for (variable in object) {
 }
 ```
 
-###### for...of
+##### for...of
 
 ```js
 // The for...of statement creates a loop Iterating over iterable objects (including Array, Map, Set, arguments object and so on)
@@ -162,6 +162,74 @@ for (var variable of array) {
 # Function
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+
+```js
+// 1. create function
+function abc () {
+  
+}
+
+// 2. add parameters 
+function abc (a, b) {
+  return a + b
+}
+
+// 2-1. add parameters 
+function abc (a, b, c) {
+  // c default is undefined
+  return a + b + c
+}
+
+// 2-2. arguments
+function abc (a) {
+  var len = arguments.length
+  console.log(len)
+}
+
+abc(1,2,3,4,5,6,7,8,9,10)
+
+function def (z) {
+  var str = '';
+  var i;
+  for (i = 1; arguments.length > i; i++) {
+    str += arguments[i] + z;
+  }
+
+  console.log(str)
+}
+
+def(1, 10, 20, 30, 40, 50)
+
+// 3. set default parameter 
+function abc (a, b) {
+  var a = a || 1;
+  var b = b || 2;
+
+  return a + b
+}
+
+// 4. function scope 
+function abc () {
+  var c = 10;
+  var d = 20;
+  return c + d;
+}
+
+console.log(c + d)
+
+// 5. call me self 
+function abc (i) {
+  if (i < 0) {
+    console.log('end')
+  } else {
+    console.log('begin: ' + i)
+    abc(i - 1);
+    console.log('end: ' + i)
+  }
+}
+
+abc(10)
+```
 
 
 
