@@ -5,7 +5,6 @@
 ## 需要做筆記
 * [JavaScript 疲劳终极指南：我们行业的真相](http://www.zcfy.cc/article/3914)
 * [CSS技巧之'text-justify'](http://www.zcfy.cc/article/text-justify-css-tricks-3946.html?t=new)
-* [Node.js教程：使用async库来优化代码 - Node Beginner Blog](https://goo.gl/z6Cssp)
 * [去其糟粕，取其精华——我如何重拾对 JavaScript 的爱](https://goo.gl/BC27fU) - 
   - functional javascript
   - replace `for loop`, `break`, `switch`
@@ -297,8 +296,8 @@ end repeat
 
 1. Setting > General > Show rulers 下可以啟用尺規，當滑鼠停留在控制台顯示的某個元素上或者選中一個元素的時候，會顯示出來。
 2. Select element > Break on > subtree modification
-                               attribute modification
-                               node removal
+                       ​    ​    attribute modification
+                       ​    ​    node removal
 代表監聽底下所限定的條件，非常好用。
 
 * [inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
@@ -388,3 +387,8 @@ end repeat
 
 ## 面試
 * [80% 应聘者都不及格的 JS 面试题](https://juejin.im/post/58cf180b0ce4630057d6727c)
+
+## Apple Developer Update
+
+- [What's New in Safari](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_11_1.html)
+
