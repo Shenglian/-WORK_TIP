@@ -118,11 +118,11 @@
 技能：攻城锤，裂地，臃肿的尸体
 属性：1智力2才智，2才智第一章基本够用了，一些隐藏的地方也足够发现，送的暴击率之后点上野蛮巫术就可以利用上
 
-![1](https://github.com/Shenglian/WORK_TIP/blob/master/imgs/divinity_original_sin2_mage_1.png)
+![1](https://github.com/Shenglian/WORK_TIP/blob/master/imgs/game/divinity_original_sin2_mage_1.png)
 
-![2](https://github.com/Shenglian/WORK_TIP/blob/master/imgs/divinity_original_sin2_mage_2.png)
+![2](https://github.com/Shenglian/WORK_TIP/blob/master/imgs/game/divinity_original_sin2_mage_2.png)
 
-![3](https://github.com/Shenglian/WORK_TIP/blob/master/imgs/divinity_original_sin2_mage_3.png)
+![3](https://github.com/Shenglian/WORK_TIP/blob/master/imgs/game/divinity_original_sin2_mage_3.png)
 
 ### 近戰
 
