@@ -43,4 +43,48 @@ func httpGet2() {
  	fmt.Println(string(s))
 }
 ​```
+
+> post 
+​```golang
+func post() {
+    type Server struct {
+    	ServerName string
+	    ServerIp   string
+	}
+
+	type ServerSlice struct {
+    	Server    []Server
+	    ServersID string
+	}
+
+	func main() {
+    	// post 第三个参数是io.reader interface
+	    // strings.NewReader  byte.NewReader bytes.NewBuffer  实现了read 方法
+    	s := ServerSlice{ServersID: "tearm", Server: []Server{{"beijing", "127.0.0.1"}, {"shanghai", "127.0.0.1"}}}
+	    b, _ := json.Marshal(s)
+         fmt.Println(string(b))
+	    resp, _ := http.Post("http://baidu.com", "application/x-www-form-urlencoded", strings.NewReader("heel="+string(b)))
+    // defer resp.Body.Close()
+    // io.Reader
+
+	    body, _ := ioutil.ReadAll(resp.Body)
+    	fmt.Println(string(body))
+}
+
+> post form
+
+func postForm() {
+    // params := url.Values{}
+    // params.Set("a", "abc")
+    
+    params = url.Values{"key": {"values"}, "id": {"123"}}
+    
+    resp, _ := http.PostForm("http://baidu.com", params)
+    
+    defer resp.Body.Close()
+    body, _ := ioutil.ReadAll(resp.Body)
+    
+    fmt.Println(string(body))
+}
+​```
 ```
