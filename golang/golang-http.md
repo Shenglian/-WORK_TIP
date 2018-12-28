@@ -70,9 +70,9 @@ func post() {
 	    body, _ := ioutil.ReadAll(resp.Body)
     	fmt.Println(string(body))
 }
-
+​```
 > post form
-
+​```golang
 func postForm() {
     // params := url.Values{}
     // params.Set("a", "abc")
@@ -83,6 +83,31 @@ func postForm() {
     
     defer resp.Body.Close()
     body, _ := ioutil.ReadAll(resp.Body)
+    
+    fmt.Println(string(body))
+}
+​```
+​```golang
+> set Header params
+func setHeader() {
+    client := &http.Client()
+    
+    req, err := http.NewRequest("POST", "baidu.com", strings.NewReader("name=cjb"))
+    if err != nil {
+        // handler error
+    }
+    
+    req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+    req.Header.Set("Cookie", "name=sheng")
+    
+    resp, err := client.Do(req)
+    
+    defer resp.Body.Close()
+    
+    body, err := ioutil.ReadAll(resp.Body)
+   	if err != nil {
+        // handle error
+   	}
     
     fmt.Println(string(body))
 }
