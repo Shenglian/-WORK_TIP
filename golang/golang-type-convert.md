@@ -1,5 +1,5 @@
 > Golang string int int64
-```golang
+```go
 // string to int 
 int, err := strconv.Atoi(string)
 

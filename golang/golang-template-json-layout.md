@@ -1,6 +1,6 @@
 > Use `templates/html` to layout `json data`
 
-```golang
+```go
 package main
 
 

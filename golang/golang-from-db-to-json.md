@@ -1,5 +1,5 @@
 > From DB To Json Format
-```golang
+```go
 	/**
 		{
 			"created_on": "27 may 2017",

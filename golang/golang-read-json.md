@@ -2,7 +2,7 @@
 
 > Read json file to output 
 
-```golang
+```go
 package main
 
 /*

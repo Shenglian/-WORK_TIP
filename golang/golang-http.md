@@ -1,5 +1,5 @@
 > get 簡單
-```golang
+```go
 func httpGet() {
  resp. err := http.Get("url", strings.NewReader("name=cjb"))
  if err != nil {
@@ -16,8 +16,7 @@ func httpGet() {
  fmt.Println(string(body))
 }
 
-> get 複雜
-​```golang 
+// get 複雜
 func httpGet2() {
 	params := url.Values{}
 	Url, err := url.Parse("http://baidu.com?fd=sadfs")
@@ -42,10 +41,8 @@ func httpGet2() {
  	
  	fmt.Println(string(s))
 }
-​```
 
-> post 
-​```golang
+// post 
 func post() {
     type Server struct {
     	ServerName string
@@ -70,9 +67,8 @@ func post() {
 	    body, _ := ioutil.ReadAll(resp.Body)
     	fmt.Println(string(body))
 }
-​```
-> post form
-​```golang
+    
+// post form
 func postForm() {
     // params := url.Values{}
     // params.Set("a", "abc")
@@ -86,9 +82,8 @@ func postForm() {
     
     fmt.Println(string(body))
 }
-​```
-​```golang
-> set Header params
+
+// set Header params
 func setHeader() {
     client := &http.Client()
     
@@ -111,5 +106,6 @@ func setHeader() {
     
     fmt.Println(string(body))
 }
-​```
+
 ```
+
