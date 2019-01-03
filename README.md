@@ -296,8 +296,8 @@ end repeat
 
 1. Setting > General > Show rulers 下可以啟用尺規，當滑鼠停留在控制台顯示的某個元素上或者選中一個元素的時候，會顯示出來。
 2. Select element > Break on > subtree modification
-                       ​    ​    attribute modification
-                       ​    ​    node removal
+                  ​     ​    ​    attribute modification
+                  ​     ​    ​    node removal
 代表監聽底下所限定的條件，非常好用。
 
 * [inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
@@ -391,4 +391,11 @@ end repeat
 ## Apple Developer Update
 
 - [What's New in Safari](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_11_1.html)
+
+## Http-cache
+
+- [循序漸進理解 HTTP Cache 機制](https://blog.techbridge.cc/2017/06/17/cache-introduction/)
+- [HTTP-Caching](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
+
+
 
