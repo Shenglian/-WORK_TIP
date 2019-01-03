@@ -4,7 +4,7 @@
 int, err := strconv.Atoi(string)
 
 // int to string 
-string := string.Itoa(int)
+string := strconv.Itoa(int)
 
 // string to int64
 int64, err := strconv.ParseInt(string, 10, 64)
