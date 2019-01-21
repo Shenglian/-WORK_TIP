@@ -5,4 +5,5 @@
 > 影片
 
 - [宵星傳說～首鳴～](https://www.bilibili.com/bangumi/play/ep89490)
+- [全Boss戰圖文攻略](http://www.isheart.com/viewthread.php?tid=141169)
 
