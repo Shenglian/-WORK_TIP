@@ -4,3 +4,9 @@
 
 [golang example](https://gobyexample.com/)
 
+[Making a RESTful JSON API in Go](https://thenewstack.io/make-a-restful-json-api-go/)
+
+[Build a simple CRUD with Go](https://medium.com/@thanhngvpt/build-a-simple-crud-with-go-20ce72313a7b)
+
+[五分钟理解golang的init函数](https://zhuanlan.zhihu.com/p/34211611)
+
