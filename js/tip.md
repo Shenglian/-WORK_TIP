@@ -167,7 +167,50 @@ console.log('r.d_width: ', r.d_width);
 
 ```js
 fs.writeFile('issues.json', JSON.stringify(response.data), function (err) {
-        err ? console.log(err) : console.log('Write operation complete.');
-      });
+    err ? console.log(err) : console.log('Write operation complete.');
+});
+```
+
+#### Use Map 
+
+```js
+function pinkFruitColor(color) {
+	const fruitColor = new Map()
+        .set('red', ['apple', 'strawberry'])
+        .set('yellow', ['banana', 'pineapple'])
+        .set('purple', ['grape', 'plum'])
+    
+    return fruitColor.get(color) || []
+}
+```
+
+#### find / some : if data is `unique ID`. use `find` better than `filter`.  
+
+#### otherwise, want to boolean use `some`
+
+```js
+const characters = [
+   	{id: 1, name: 'ironman' },
+    {id: 2, name: 'black_widow' },
+    {id: 3, name: 'captain_america' },
+    {id: 4, name: 'captain_america' }
+]
+
+function getCharacter(name) {
+    return character => character.name === name
+}
+
+characters.filter(getCharacter('captain_america'))
+// [
+// 	{id: 3, name: 'captain_america' },
+//  {id: 4, name: 'captain_america' }	
+// ]
+
+characters.find(getCharacter('captain_america'))
+// [
+//   {id: 3, name: 'captain_america'}
+// ]
+
+characters.some(getCharacter('captain_america'))
 ```
 
