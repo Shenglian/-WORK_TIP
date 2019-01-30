@@ -2,9 +2,9 @@
 ### Event-Loop
 
 > 1. microtasks 會先執行完，才會去執行 marcotasks 
+> 2. 事件循環由三部分組成：執行（宏）任務，執行microtask。
+>    UI渲染具體步驟：執行一個（宏）任務（整體代碼也是一個宏觀的任務），然後清空microtask隊列，最後UI渲染（並不是每次都會執行渲染，瀏覽器只需保證60Hz的刷新率即可）。
 >
-> 2. 事件循環由三部分組成：執行（宏）任務，執行microtask，UI渲染具體步驟：執行一個（宏）任務（整體代碼也是一個宏觀的任務），然後清空microtask隊列，最後UI渲染（並不是每次都會執行渲染，瀏覽器只需保證60Hz的刷新率即可）。
->    
 > 3. 看一下瀏覽器執行一次UI渲染的基本流程：
 >
 > - 解構HTML構建DOM樹;
@@ -22,7 +22,7 @@
 
 首先, 全部代碼(script) 算是一個 `macrotask`.
 
-- 第一步：瀏覽器先執行一個 macrotask -> 全部代碼(script)，並且掛起 tasks queue and jobs queue
+- 第一步：瀏覽器先執行一個 macrotask `全部代碼(script)`，並且掛起 tasks queue and jobs queue
 - 第二步：執行 micro -> 將清空所有的 mircotask queue 
 - 第三步：執行 macro -> 將所有的 marcotask queue 取出
 - 第四步：看 mirco 裡面有沒有 queue 或是 看 marco 裡面有沒有 queue
