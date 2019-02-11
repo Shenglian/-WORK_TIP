@@ -1,5 +1,19 @@
 [TOC]
 
+# Building a Simple Virtual DOM from Scratch
+
+*> virtual dom*
+
+[article link](https://dev.to/ycmjason/building-a-simple-virtual-dom-from-scratch-3d05#mount-node-target)
+
+*> ChildNode.replaceWith()*
+
+[link](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/replaceWith)
+
+*> Node-type*
+
+[link](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
+
 # 在 web 上使用 JavaScript 模块
 
 [在 web 上使用 JavaScript 模块](https://zhuanlan.zhihu.com/p/38581901)
