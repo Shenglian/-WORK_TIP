@@ -14,6 +14,8 @@
 
 [link](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
 
+[gitlab-source](https://gitlab.com/Shenglian/virtual-dom-simple-example)
+
 # 在 web 上使用 JavaScript 模块
 
 [在 web 上使用 JavaScript 模块](https://zhuanlan.zhihu.com/p/38581901)
