@@ -10,3 +10,5 @@
 
 [五分钟理解golang的init函数](https://zhuanlan.zhihu.com/p/34211611)
 
+[golang with webassembly](https://zhuanlan.zhihu.com/p/43506954)
+

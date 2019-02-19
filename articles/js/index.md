@@ -22,8 +22,6 @@
 
 > 心得：還不錯用，可以支援 defer，但是要切更細的話，要自己來
 
-
-
 # JavaScript 引擎基础：Shapes 和 Inline Caches
 
 [JavaScript 引擎基础：Shapes 和 Inline Caches](https://hijiangtao.github.io/2018/06/17/Shapes-ICs/)
