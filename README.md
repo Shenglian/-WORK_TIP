@@ -36,42 +36,7 @@
 * [js中__proto__和prototype的区别和关系？](https://www.zhihu.com/question/34183746)
 * [該來理解 JavaScript 的原型鍊了](http://blog.techbridge.cc/2017/04/22/javascript-prototype/)
 
-#### Closures
 
-#### This (指向，及目標方向，所對的方位)
-* 普通調用 - (誰調用，就指向誰)
-* apply/call [前往](https://github.com/Shenglian/work-tip/blob/master/scope.md)
-* arrow function this === current function
-* normal function this === window
-* (This in JavaScript)[https://zellwk.com/blog/this/]
-	ps1. 要注意 native function 是依附在誰身上，裡面的 cb this 會指向它
-	ps2. simple function this 都是指向 windows
-
-```js
-var o = {
-    doSomeThingLater() {
-        console.log('1. where is this? ', this);
-        setTimeout(function(){
-            console.log('2. where is this? ', this);
-            try {
-                this.speakLeet();
-            } catch(error) {
-                console.log('error', error);
-            }
-        }, 0)
-    },
-    speakLeet() {
-        console.log('Here is speakLeet function');
-    },
-    todoList() {
-        console.log('3. where is this? ', this);
-        this.speakLeet();  
-    },
-}
-
-o.todoList();
-o.doSomeThingLater();
-```
 
 #### Other 
   * By value vs by reference [前往](https://github.com/Shenglian/work-tip/blob/master/js/by_value_vs_by_reference.md)
