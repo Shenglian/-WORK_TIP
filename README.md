@@ -1,6 +1,10 @@
 # work-tip
 工作上小技巧
 
+## 看過的 Source Code 
+* [IntersectionObserver/polyfill/intersection-observer.js](https://github.com/w3c/IntersectionObserver/blob/master/polyfill/intersection-observer.js)
+* [vue/src/core/util/env.js](https://github.com/vuejs/vue/blob/dev/src/core/util/env.js)
+
 
 ## 需要做筆記
 * [JavaScript 疲劳终极指南：我们行业的真相](http://www.zcfy.cc/article/3914)
@@ -358,9 +362,7 @@ end repeat
 - [What's New in Safari](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_11_1.html)
 
 ## Http-cache
-
 - [循序漸進理解 HTTP Cache 機制](https://blog.techbridge.cc/2017/06/17/cache-introduction/)
 - [HTTP-Caching](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
-
 
 
