@@ -217,7 +217,6 @@ source $HOME/.bash_profile
 ## Git
 
 * [git-tips - Git的奇技淫巧](https://goo.gl/Hj7Ss4)
-* [遇到需要使用 GIT 的問題](https://github.com/Shenglian/work-tip/blob/master/git.md)
 
 ## mobile 坑
 
