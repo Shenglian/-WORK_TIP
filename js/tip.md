@@ -1,4 +1,9 @@
+[TOC]
+
+
+
 #### Decimal base exponents
+
 ```js
 1e0 === 1;
 1e1 === 10;
@@ -213,4 +218,210 @@ characters.find(getCharacter('captain_america'))
 
 characters.some(getCharacter('captain_america'))
 ```
+
+
+
+#### 一次性函數
+
+> 適用於只需要運行一次的初始化代碼
+
+```js
+let sca = function() {
+  console.log('msg')
+  sca = function() {
+    console.log('msgs')
+  }
+}
+
+sca() // msg
+sca() // msgs
+sca() // msgs
+```
+
+
+
+#### 構造參數 with reduce
+
+> 混合使用
+
+```js
+function add(first, second, ...remaining) {
+  return first + second + reminding.reduce((acc, curr) => acc + curr, 0)
+}
+```
+
+
+
+#### 統計 Array 中相同項目的個數
+
+>  利用 `reduce` 統計個數
+
+```js
+let carsObj = ['BMW', 'BENZ', 'BENZ', 'TESLA', 'TOYOTA'].reduce((obj, name) => {
+  obj[name] = obj[name] ? ++obj[name] : 1;
+  return obj
+}, {})
+
+console.log({carsObj})
+```
+
+
+
+#### 對於 Array 的解構
+
+> Array 也可以對象解構。可以方便地獲取 Array 的某個第 N 值
+
+```js
+const csvFileLine = "1997, John Doe, US, sheng@g.com"
+const { 0: year, 1: name, 2: country, 3: email} = csvFileLine.split(',')
+
+console.log({
+ year, name, country, email
+}) // year: '1997', name: 'John Doe', country: 'US', email: 'sheng@g.com'
+```
+
+
+
+#### 函數中深層解構對象
+
+> 使用深層解構賦值
+
+```js
+var car = {
+  model: 'bmw 2018',
+  engine: {
+    v6: true,
+    turbo: true,
+    vin: 2093
+  }
+}
+
+const modelAndVIN = ({model, engine: {vin}}) => {
+  console.log(`model : ${model}, VIN: ${vin}`);
+}
+
+modelAndVIN(car) // model: bmw 2018, VIN: 2093
+```
+
+
+
+#### reduce 同時使用 map and filter
+
+> 只需要一次 for loop
+
+```js
+const numbers = [10, 20, 30, 40]
+let tempNum = 0
+
+const doubleOver50 = numbers.reduce((finalList, num) => {
+  tempNum = num * 2
+  if (tempNum > 50) {
+    finalList.push(num)
+  }
+  return finalList
+}, [])
+
+console.log(doubleOver50) // [30, 40]
+```
+
+
+
+#### 數字補零 
+
+> 有時候需要將一位數補成兩位數
+
+```js
+const addZero1 = (num, len = 2) => (`0${num}`).slice(-len)
+const addZero2 = (num, len = 2) => (`${num}`).padStart(len, '0')
+```
+
+
+
+#### 惰性載入函數
+
+> 這個判斷在整個項目中都不會變化，可以判斷分支在整個項目運行時，只執行某個分支
+
+```js
+function foo() {
+  if (a !== b) {
+    console.log('a1')
+  } else {
+    console.log('b2')
+  }
+}
+
+// 改善後
+
+function foo() {
+  if (a !== b) {
+    foo = function() {
+      console.log('a1')
+    }
+  } else {
+    foo = function() {
+      console.log('b2')
+    }
+  }
+  
+  return foo();
+}
+```
+
+
+
+#### 代碼複用
+
+> 建構一個運行時的通用驗證函數
+
+```js
+const schema = {
+  first: {
+    required: true
+  },
+  last: {
+    required: true
+  }
+}
+
+const validate = (schema, values) => {
+  for (field in schema) {
+    if (schema[field].required) {
+      if (!values[field]) {
+        return false
+      }
+    }
+  }
+  
+  return true
+}
+
+console.log(validate(schema, {first: 'Sheng'})); // false
+console.log(validate(schema, {first: 'Sheng', last: 'Lin'})) // true
+```
+
+
+
+#### async/await 
+
+> 範例
+
+```js
+async function getItems() {
+  try {
+    const user = await getUser();
+    const order = await getOrderByUser(user);
+    const items = await getOrderItemsByOrder(order);
+    return items
+  } catch(err) {
+    // error handle
+  }
+}
+
+getItems()
+.then(res => {
+  // do something
+})
+```
+
+
 
