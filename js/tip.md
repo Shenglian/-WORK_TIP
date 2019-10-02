@@ -528,3 +528,24 @@ getItems()
 
 
 
+#### 利用 Number || Boolean 
+
+> 利用 Number || Boolean 來 filter data
+
+```js
+const collection = [
+  { name: 'Stefan Baumgartner', age: 37 },
+  undefined,
+  { name: 'D.', age: 36 },
+  false
+  { name: 'C.', age: 2},
+  false
+]
+
+collection.filter(Boolean) // handy!
+
+const x = ["1.23", 2137123, "wut", false, "lol", undefined, null]
+  .map(Number)
+  .filter(Boolean) // [1.23, 2137123] 👍
+```
+
