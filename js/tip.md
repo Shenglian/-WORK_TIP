@@ -282,7 +282,81 @@ console.log({
 
 
 
-#### 函數中深層解構對象
+#### Object and Array Destructure
+
+> we can access nested properties even if they are in a different type of data structure than the external one we’re accessing.
+
+```js
+var organization = {
+  user: ['aaa', 'bbb'],
+  name: 'Magazine',
+  url: 'https://www.smashingmagazine.com/'
+}
+
+const {users: [a]} = organization
+
+console.log({a}) // a = aaa
+
+var organization = [
+  {
+    name: 'far',
+    age: 20
+  },
+  {
+    name: 'bar',
+    age: 40
+  }
+]
+
+const [get1, get2] = organization
+
+console.log(get1, get2) // get1: { name: 'far', age: 20 }, get2: { name: 'bar', age: 40 }
+```
+
+
+
+#### Destructure Aliases
+
+> set data other variable name
+
+```js
+const users = [{
+  name: 'rachel',
+  title: 'editor'
+}, {
+  name: 'laurie',
+  title: 'contributor'
+}]
+
+const [{'name': otherNameOne}, {'name': otherNameTwo}] = users
+
+console.log({otherNameOne, otherNameTwo}) // { otherNameOne: 'rachel', otherNameTwo: 'laurie' }
+```
+
+
+
+#### Destructure Default Values
+
+> set variable default value
+
+```js
+const {
+  name = 'Cloud',
+  age = 20,
+  cb = function() { console.log('cb') }
+} = {
+  name: 'Luke',
+  organzation: 'Acme Publisting'
+}
+
+console.log({name, age}) // Luke, 20
+
+cb() // cb
+```
+
+
+
+#### Nested Destructure in function or not
 
 > 使用深層解構賦值
 
@@ -296,11 +370,40 @@ var car = {
   }
 }
 
+// in variable
+const {
+  model, 
+  engine: {v6}
+} = car
+
+console.log(model, v6) // bmw 2018 true
+
+// in function
 const modelAndVIN = ({model, engine: {vin}}) => {
   console.log(`model : ${model}, VIN: ${vin}`);
 }
 
 modelAndVIN(car) // model: bmw 2018, VIN: 2093
+```
+
+
+
+#### Set default Value of function
+
+> set default value
+
+```js
+function abc({
+  a = 'a', 
+  b = 'b', 
+  c = 'c',
+  d = function() { console.log('d') }
+} = {}) {
+  console.log(a, b, c, d)
+}
+
+
+abc() // a b c function() { console.log('d') }
 ```
 
 
