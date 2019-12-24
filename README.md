@@ -120,7 +120,7 @@ s = function(x){return x}
   Axios
   * [Axios 入門配置](https://blog.ygxdxx.com/2017/01/29/Axios-Config/)
   * [Axios 源碼解析](http://blog.acohome.cn/tag/axios/)
-  * [Axios -- 9：axios axios库对外暴露的函数](http://blog.acohome.cn/2017/07/20/axios-9-axios-axiosku-dui-wai-bao-lu-de-han-shu/)
+  * [Axios源码深度剖析 - AJAX新王者](https://juejin.im/post/5b0ba2d56fb9a00a1357a334)
 
 
 * [Vuejs-tips](https://medium.com/vuejs-tips)
