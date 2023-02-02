@@ -1,6 +1,12 @@
 # work-tip
 工作上小技巧
 
+## 面試相關
+
+- https://github.com/yangshun/front-end-interview-handbook/blob/master/Translations/Chinese/questions/javascript-questions.md
+- https://dev.to/lydiahallie/interactive-javascript-quiz-2-4pi1?fbclid=IwAR2oe2achGzTqjUk8RhRdWYjfP_qZGeAVyjHwn6ZP0IM7olbylX1mKEENWM
+- https://github.com/lydiahallie/javascript-questions
+
 ## 看過的 Source Code 
 * [IntersectionObserver/polyfill/intersection-observer.js](https://github.com/w3c/IntersectionObserver/blob/master/polyfill/intersection-observer.js)
 * [vue/src/core/util/env.js](https://github.com/vuejs/vue/blob/dev/src/core/util/env.js)
@@ -18,9 +24,7 @@
 ## 演算法
 0. [演算法 - 每日練習](https://github.com/Shenglian/work-tip/blob/master/js/algorithm.md)
 1. [演算法](https://sort.hust.cc/1.bubbleSort.html)
-2. [算法：找出缺失的整数](http://blog.jobbole.com/106521/)
-3. [算法：如何判断链表有环？](http://blog.jobbole.com/106227/#comment-158642)
-4. [算法：什么是 B 树？](http://blog.jobbole.com/111757/)
+2. https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-TW.md
 
 ## Javascript 
 
